@@ -5,7 +5,6 @@ require_once("core/init.php");
 $user = new User();
 
 
-
 $router = new Router;
 
 $router->bind('/panel', 'GET', function() {
@@ -21,3 +20,5 @@ $router->bind('/profile', 'GET', function() {
 $router->bind('/test', 'GET', function(){ return 'test'; });
 
 echo $router->runUrl($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+
+?>
