@@ -1,0 +1,118 @@
+.header {
+	display:flex;
+	width:min-width;
+	height:150px;
+	border:2px solid black;
+	align-items:center;
+}
+
+#Logo {
+
+	margin:auto;
+	height:10px;
+	display:table;
+	width:fit-content;
+	border:2px solid black;
+
+}
+
+.avatar{
+
+	border-radius:50%;
+	max-width:100px;
+	max-height:100px;
+	display:block;
+	margin:0px auto;
+
+}
+
+.panel {
+
+	margin:0px;
+	padding:15px;
+	border:2px solid black;
+
+	color: black;
+	/*height:500px;*/
+
+}
+
+.content {
+
+	text-align:center;
+	padding:15px;
+	margin:0px;
+	min-height:500px;
+	border:2px solid black;
+
+}
+
+#login-form {
+
+
+text-align:left;
+	/* border:2px solid black; */
+	/* //vertical-align:center; */
+	margin:auto 5px;
+}
+
+#register-button {
+
+	display:inline;
+	float:right;
+	margin:10px 5px;
+	/* border:2px solid black; */
+
+}
+
+#login-button {
+
+	display:inline;
+	margin:10px 5px;
+	/* border:2px solid black; */
+
+}
+
+.alert {
+
+	margin:10px 0px;
+
+
+}
+#log-out-button{
+
+	display:block;
+	float:right;
+	margin:10px 0px;
+
+}
+.nav-panel-css > li > a{
+
+
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+
+}
+.nav-panel-css > li > a:focus{
+
+
+	color: #333;
+	background-color: #eee;
+	border-color: #ccc;
+	border:1px solid;
+
+}
+.error{
+
+  margin:5px;
+	color:red;
+
+}
+p.success {
+
+	text-align:center;
+	margin:5px;
+	color:green;
+
+}
