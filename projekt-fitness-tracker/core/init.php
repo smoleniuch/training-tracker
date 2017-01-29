@@ -8,7 +8,7 @@
       'host' => "127.0.0.1",
       'username' => "root",
       'password' => "",
-      "database" => "fitnessadmin",
+      "database" => "fitnessAdmin",
       "charset" => "UTF8",
       "port" => "n/a"
 
@@ -24,13 +24,7 @@
       "session_name" => "user"
 
     ),
-    "default_files" => array(
-
-      "header" => "header.php",
-      "panel" => "login-form.php",
-      "content" => "content.php"
-
-    ),
+    
     "profile" => array(
 
       "default-avatar" => "uploads/avatars/default-avatar.jpeg"
