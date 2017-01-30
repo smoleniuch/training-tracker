@@ -1,24 +1,34 @@
 <?php
 require_once("core/init.php");
-
+var_dump($_SERVER);
 
 $user = new User();
 
 
-$router = new Router;
+$router = new Router();
+
 
 $router->bind('/panel', 'GET', function() {
-    $panelController = new PanelController;
+    $panelController = new PanelController();
     return $panelController->displayPanel();
 });
 
 $router->bind('/profile', 'GET', function() {
-    $profileController = new ProfileController;
+    $profileController = new ProfileController();
     return $profileController->displayProfile();
 });
 
-$router->bind('/test', 'GET', function(){ return 'test'; });
 
-echo $router->runUrl($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+if($layout = $router->runUrl($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD'])){
+
+  echo $layout;
+
+}
+//default
+else{
+
+  echo $router->runUrl("panel.php","GET");
+
+}
 
 ?>

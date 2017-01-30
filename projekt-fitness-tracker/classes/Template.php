@@ -43,15 +43,19 @@ class Template{
     $output = file_get_contents($this->file);
     //var_dump($output);
     foreach($this->values as $name => $value){
+      if($value){
 
-      $output = str_replace("[@$name]",$value,$output);
+        $output = str_replace("[@$name]",$value,$output);
+
+      }
+
 
     }
 
     //remove unset values
 
     $output = preg_replace("/\[@.+?\]/","",$output);
-    
+
 
     //var_dump($output);
     return $output;

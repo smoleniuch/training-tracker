@@ -1,6 +1,6 @@
 <?php
     require_once("core/init.php");
-    var_dump(implode("<br>",$_SERVER));
+    
     if (Input::exists()) {
 
         $login_validation = new Validation();
