@@ -6,9 +6,18 @@ class ProfileController
 {
     public function displayProfile()
     {
-        // '/profile/24'
-        $found;
-        $profile_id = preg_match('/\d+/', $_SERVER['REQUEST_URI'], $found);
+
+
+        if(preg_match('/\d+/', $_SERVER['REQUEST_URI'], $user_id)){
+
+          $user_id = $user_id[0];
+
+        }
+        else{
+
+          $user_id = false;
+
+        }
 
         $user = new User();
 
@@ -17,15 +26,18 @@ class ProfileController
           Redirect::to("login.php");
 
         }
-
+        //set content
+        $profile = new Template("Templates/profile.tpl");
+        $profile->set(array("user_id" => $user_id));
+        $profile = $profile->output();
+        //set panel
         $panel = new Template("Templates/panel.tpl");
-        $user_id = $found[0];
-
-        $panel->set(array("user_id" => $user_id));
         $panel = $panel->output();
 
+        //set main layout
         $layout = new Template("Templates/layout.tpl");
-        $layout->set(array("panel" => $panel));
+        $layout->set(array("content" => $profile,
+                           "panel" => $panel));
 
 
         return $layout->output();

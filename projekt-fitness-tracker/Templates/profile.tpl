@@ -2,7 +2,7 @@
 
   <input type="file" name="avatar-upload">
   <input type="submit" value="Upload avatar" name="Upload-avatar">
-
+  [@user_id]
 </form>
 <span class='label label-info' id="upload-file-info"></span>
 <label class="btn btn-primary" for="my-file-selector">

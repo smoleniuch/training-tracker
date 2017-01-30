@@ -2,7 +2,7 @@
 <ul class="nav nav-pills nav-stacked nav-panel-css" >
 
   <li><a href=""><span class="glyphicon glyphicon-piggy-bank"></span> My workouts</a></li>
-  <li><a href="/profile/[@user_id]"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+  <li><a href="profile"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
   <li><a href="#"><span class="glyphicon glyphicon-heart"></span> Friends</a></li>
   <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
 
