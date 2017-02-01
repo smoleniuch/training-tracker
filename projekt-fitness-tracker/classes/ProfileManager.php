@@ -17,7 +17,7 @@ class ProfileManager{
 
     $addProfile = DB::getInstance()->query($stmt,$params);
 
-    
+
     if(!$addProfile->error()){
 
       return true;
@@ -26,7 +26,11 @@ class ProfileManager{
 
     return false;
   }
+  public static function getProfile($id){
 
+
+
+  }
 }
 
  ?>

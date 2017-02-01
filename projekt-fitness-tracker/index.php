@@ -1,6 +1,5 @@
 <?php
 require_once("core/init.php");
-var_dump($_SERVER);
 
 $user = new User();
 
@@ -27,7 +26,7 @@ if($layout = $router->runUrl($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']
 //default
 else{
 
-  echo $router->runUrl("panel.php","GET");
+  echo $router->runUrl("login.php","GET");
 
 }
 

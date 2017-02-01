@@ -1,6 +1,6 @@
 
 
-
+<div id="login-form">
 	<form action="" method="POST">
 		<div id="login-form">
 			<div class="form-group">
@@ -12,8 +12,9 @@
 				<input class="form-control" id="inputPassword" name="password" type="password" placeholder="password"></input>
 
 				<button id="login-button" type="submit" class="btn btn-default text-right"><span class="glyphicon glyphicon-log-in"></span> Log in</button>
-        <button id="register-button" type="button" onclick="redirect('register2.php')" class="btn btn-default text-right"><span class="glyphicon glyphicon-registration-mark"></span> Register</button>
+        <button id="register-button" type="button" onclick="redirect('register.php')" class="btn btn-default text-right"><span class="glyphicon glyphicon-registration-mark"></span> Register</button>
 
 			</div>
 		</div>
 	</form>
+</div>
