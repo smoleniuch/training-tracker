@@ -1,36 +1,22 @@
 
-<html>
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
-    <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="bootstrap-3.3.7-dist/css/my-css.css" rel="stylesheet" type="text/css">
-    <script type="text/Javascript" src="js/sha512.js"></script>
-    <script type="text/Javascript" src="js/forms.js"></script>
-
-  </head>
-
-  <body>
-
-
-
       <form class="form-group" action="" method="post" name="registration_form">
 
-           Username: <input type='text' name='username' id='username' value="" class="form-control"/><br>
-
-
-           Email: <input type="text" name="email" id="email" value="" class="form-control"/><br>
-
-           Password: <input type="password" name="password" id="password" class="form-control"/><br>
-
-           Confirm password: <input type="password" name="confirmpwd" id="confirmpwd" class="form-control" /><br>
-
-           <input class="btn btn-default" type="button" value="Register" onclick="form.submit()" />
+           <label for="username">Username:</label>
+           <input type='text' name='username' id='username' value="[@username]" class="form-control"/><br>
+           [@username-error]
+           <label for="email">Email:</label>
+           <input type="text" name="email" id="email" value="[@email]" class="form-control"/><br>
+           [@email-error]
+           <label for="password">Password:</label>
+           <input type="password" name="password" id="password" class="form-control"/><br>
+           [@password-error]
+           <label for="confirmpwd">Confirm password:</label>
+           <input type="password" name="confirmpwd" id="confirmpwd" class="form-control" /><br>
+           [@confirmpwd-error]
+           <button class="btn btn-default" type="submit" onclick="form.submit()" /><span class="glyphicon glyphicon-registration-mark"></span> Register</button>
        </form>
        <ul>
+
             <li>Usernames may contain only digits, upper and lowercase letters and underscores</li>
             <li>Emails must have a valid email format</li>
             <li>Passwords must be at least 6 characters long</li>
@@ -44,9 +30,4 @@
             <li>Your password and confirmation must match exactly</li>
         </ul>
 
-       <p>Return to the <a href="index.php">login page</a>.</p>
-
-
-  </body>
-
-</html>
+       <p>Return to the <a href="login.php">login page</a>.</p>

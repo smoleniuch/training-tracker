@@ -130,9 +130,9 @@
       public function addError($error, $field)
       {
           if (empty($this->_errors[$field])) {
-              $this->_errors[$field] = array(generate_html_error($error));
+              $this->_errors[$field] = generate_html_error($error);
           } else {
-              $this->_errors[$field][] = generate_html_error($error);
+              $this->_errors[$field] .= generate_html_error($error);
           }
       }
       /**
@@ -140,9 +140,9 @@
        * @param  string $field input field name
        * @return string        display
        */
-      public function displayError($field)
+      public function displayErrors($field = null)
       {
-          $errors = "";
+          $errors = $this->_errors;
 
           if (!empty($this->_errors[$field])) {
               foreach ($this->_errors[$field] as $error) {
