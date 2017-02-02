@@ -23,7 +23,7 @@ class ProfileController
 
         if(!$user->isLoggedIn()){
 
-          Redirect::to("login.php");
+          Redirect::to("login");
 
         }
         //set content
@@ -31,7 +31,7 @@ class ProfileController
         $profile->set(array("user_id" => $user_id));
         $profile = $profile->output();
         //set panel
-        $panel = new Template("Templates/panel.tpl");
+        $panel = new Template("Templates/menu.tpl");
         $panel = $panel->output();
 
         //set main layout

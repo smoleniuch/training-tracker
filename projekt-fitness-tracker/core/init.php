@@ -24,10 +24,13 @@
       "session_name" => "user"
 
     ),
-    
-    "profile" => array(
 
-      "default-avatar" => "uploads/avatars/default-avatar.jpeg"
+    "user" => array(
+      "login_attempts" => array(
+        "time" => 60*60*2, //seconds
+        "max" => 5
+      ),
+    "default-avatar" => "uploads/avatars/default-avatar.jpeg"
 
     )
 

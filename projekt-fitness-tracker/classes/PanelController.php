@@ -10,11 +10,11 @@ class PanelController
 
         if(!$user->isLoggedIn()){
 
-          Redirect::to("login.php");
+          Redirect::to("login");
 
         }
 
-        $panel = new Template("Templates/panel.tpl");
+        $panel = new Template("Templates/menu.tpl");
         $user_id = $user->getData()->id;
 
         $panel->set(array("user_id" => $user_id));

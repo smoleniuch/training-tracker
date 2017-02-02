@@ -13,7 +13,17 @@ class Router
      */
     public function bind($url, $method, $callback)
     {
-       $this->routes[$url][$method]['action'] = $callback;
+       if(is_array($method)){
+         foreach($method as $method){
+           $this->routes[$url][$method]['action'] = $callback;
+         }      
+       }
+       else{
+
+         $this->routes[$url][$method]['action'] = $callback;
+
+       }
+
     }
 
 
