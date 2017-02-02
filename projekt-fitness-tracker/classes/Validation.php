@@ -143,14 +143,18 @@
       public function displayErrors($field = null)
       {
           $errors = $this->_errors;
+          if($field !== null){
+            //filter errors
+            $errors = array_filter($errors,function($key) use ($field){
 
-          if (!empty($this->_errors[$field])) {
-              foreach ($this->_errors[$field] as $error) {
-                  $errors .= $error;
-              }
+              return $field === $key;
+
+            },ARRAY_FILTER_USE_KEY);
+
           }
-
           return $errors;
+
+
       }
       /**
        * count validation errors

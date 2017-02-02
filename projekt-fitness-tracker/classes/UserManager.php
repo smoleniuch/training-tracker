@@ -117,4 +117,14 @@
 
         return false;
     }
+
+    public static function getUserId($email){
+      $id = false;
+      if(self::userExists($email)){
+
+        $id = self::getUserData($email)->id;
+
+      }
+      return $id;
+    }
   }

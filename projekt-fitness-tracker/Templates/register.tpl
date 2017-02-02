@@ -2,17 +2,21 @@
       <form class="form-group" action="" method="post" name="registration_form">
 
            <label for="username">Username:</label>
-           <input type='text' name='username' id='username' value="[@username]" class="form-control"/><br>
            [@username-error]
+           <input type='text' name='username' id='username' value="[@username]" class="form-control"/>
+
            <label for="email">Email:</label>
-           <input type="text" name="email" id="email" value="[@email]" class="form-control"/><br>
            [@email-error]
+           <input type="text" name="email" id="email" value="[@email]" class="form-control"/>
+
            <label for="password">Password:</label>
-           <input type="password" name="password" id="password" class="form-control"/><br>
            [@password-error]
+           <input type="password" name="password" id="password" class="form-control"/>
+
            <label for="confirmpwd">Confirm password:</label>
-           <input type="password" name="confirmpwd" id="confirmpwd" class="form-control" /><br>
            [@confirmpwd-error]
+           <input type="password" name="confirmpwd" id="confirmpwd" class="form-control" /><br>
+
            <button class="btn btn-default" type="submit" onclick="form.submit()" /><span class="glyphicon glyphicon-registration-mark"></span> Register</button>
        </form>
        <ul>
@@ -30,4 +34,4 @@
             <li>Your password and confirmation must match exactly</li>
         </ul>
 
-       <p>Return to the <a href="login.php">login page</a>.</p>
+       <p>Return to the <a href="login">login page</a>.</p>

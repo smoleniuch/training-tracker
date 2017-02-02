@@ -22,16 +22,16 @@
 
     }
 
-    public static function get($field){
+    public static function get($field,$method = "post"){
 
-      if(isset($_GET[$field])){
-
-        return $_GET[$field];
-
-      }
-      else if(isset($_POST[$field])){
+      if($method == "post" && !empty($_POST[$field])){
 
         return $_POST[$field];
+
+      }
+      else if($method == "get" && !empty($_GET[$field])){
+
+        return $_GET[$field];
 
       }
 
