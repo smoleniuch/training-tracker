@@ -13,6 +13,11 @@
       "port" => "n/a"
 
     ),
+    "paths" => array(
+      "main" => "/WebDev/Portfolio/training-tracker/projekt-fitness-tracker/",
+      "templates" => $_SERVER["DOCUMENT_ROOT"] . "/WebDev/Portfolio/training-tracker/projekt-fitness-tracker/Templates/"
+
+    ),
     "remember" => array(
 
       "cookie_name" => "hash",

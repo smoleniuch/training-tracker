@@ -26,11 +26,27 @@ class ProfileManager{
 
     return false;
   }
-  public static function getProfile($id){
+  /**
+   * Returns associative array with profile data.
+   * @param  int $id users id
+   * @return associative array  or false   if it finds user fetch data.
+   */
+  public static function getProfileData($id){
 
+    $db = DB::getInstance();
+
+    $db->query("SELECT * FROM `users_profiles` WHERE `user_id` = :id",array(":id" => $id),PDO::FETCH_ASSOC);
+
+    if(!empty($db->result())){
+
+      return $db->result()[0];
+
+    }
+    return false;
 
 
   }
+
 }
 
  ?>

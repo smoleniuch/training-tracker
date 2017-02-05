@@ -39,14 +39,21 @@
 
 .content {
 
-	text-align:center;
+	/*text-align:center;*/
 	padding:15px;
 	margin:0px;
 	min-height:500px;
 	border:2px solid black;
 
 }
+#profile-credentials{
 
+	margin:auto auto;
+	width:50%;
+
+	display: block;
+
+}
 #login-form {
 
 
@@ -82,8 +89,8 @@ text-align:left;
 #log-out-button{
 
 	display:block;
-	float:right;
-	margin:10px 0px;
+	margin:10px auto;
+	
 
 }
 .nav-panel-css > li > a{
