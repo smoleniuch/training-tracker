@@ -29,7 +29,7 @@
         $this->userData = UserManager::getUserData($email);
         //store user id in session
         $this->_isLoggedIn = true;
-        Session::put($this->sessionName,$this->getData()->id);
+        Session::put($this->sessionName,$this->getData()->user_id);
         return true;
 
       }

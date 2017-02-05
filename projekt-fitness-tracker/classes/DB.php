@@ -36,13 +36,13 @@ class DB
      * @param  array  $params optional values to bind.
      * @return object         current working instance of db.
      */
-    public function query($stmt, $params = array())
+    public function query($stmt, $params = array(),$fetchType = PDO::FETCH_OBJ)
     {
         $this->_error = false;
 
         if ($this->_query = $this->_pdo->prepare($stmt)) {
             if ($this->_query->execute($params)) {
-                $this->_result = $this->_query->fetchAll(PDO::FETCH_OBJ);
+                $this->_result = $this->_query->fetchAll($fetchType);
             }
             $this->_count = $this->_query->rowCount();
         } else {

@@ -53,7 +53,7 @@
 
         //id
         if (is_numeric($value)) {
-            $getUserSQL = "SELECT * FROM `members` WHERE `id` = :id ";
+            $getUserSQL = "SELECT * FROM `members` WHERE `user_id` = :id ";
             $params = array(":id" => $value);
         }
         //email
@@ -80,7 +80,7 @@
 
       //search by ID
       if (is_numeric($value)) {
-          $user = DB::getInstance()->query("SELECT 'id' FROM `members` WHERE `id` = :id", array(
+          $user = DB::getInstance()->query("SELECT 'id' FROM `members` WHERE `user_id` = :id", array(
 
           ":id" => $value
 
@@ -94,7 +94,7 @@
 
         ));
       }
-
+      
         if ($user->result()) {
             return true;
         }

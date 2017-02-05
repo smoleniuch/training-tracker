@@ -16,7 +16,7 @@ class Router
        if(is_array($method)){
          foreach($method as $method){
            $this->routes[$url][$method]['action'] = $callback;
-         }      
+         }
        }
        else{
 
@@ -35,6 +35,7 @@ class Router
 
             if(strpos($url, $binding) !== false && array_key_exists($method, $bindMethod))
             {
+                
                 return $bindMethod[$method]['action']();
             }
         }
