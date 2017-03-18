@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Profile;
 use Illuminate\Http\Request;
+use App\Http\Requests\UpdateUserProfile;
 use Illuminate\Http\Response;
 
 class ProfileController extends Controller
@@ -59,8 +60,9 @@ class ProfileController extends Controller
      */
     public function show(Profile $user_id)
     {
+
         $profileData = $user_id->toArray();
-        
+
 
         return view('pages.profile.show', $profileData);
     }
@@ -73,7 +75,7 @@ class ProfileController extends Controller
      */
     public function edit(Profile $profile)
     {
-        return view('pages.profile.edit');
+        return view('pages.settings.profile');
     }
 
     /**
@@ -83,9 +85,9 @@ class ProfileController extends Controller
      * @param  \App\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Profile $profile)
+    public function update(UpdateUserProfile $request, Profile $profile)
     {
-        //
+
     }
 
     /**

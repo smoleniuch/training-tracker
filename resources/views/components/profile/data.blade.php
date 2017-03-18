@@ -10,10 +10,10 @@
 
           <div class="profile-show-menu">
               <ul class="nav nav-pills nav-panel-css">
-              <li><a href=""><span class="glyphicon glyphicon-star"></span> Records</a></li>
-              <li><a href="profile"><span class="glyphicon glyphicon-stats"></span> Statistics</a></li>
-              <li><a href="profile"><span class="glyphicon glyphicon-king"></span> Achivements</a></li>
-              <li><a href="profile"><span class="glyphicon glyphicon-edit"></span> Goals</a></li>
+              <li><a href="records"><span class="glyphicon glyphicon-star"></span> Records</a></li>
+              <li><a href="statistics"><span class="glyphicon glyphicon-stats"></span> Statistics</a></li>
+              <li><a href="achivements"><span class="glyphicon glyphicon-king"></span> Achivements</a></li>
+              <li><a href="goals"><span class="glyphicon glyphicon-edit"></span> Goals</a></li>
             </ul>
 
           </div>
@@ -56,10 +56,7 @@
                   <td>Location:</td>
                   <td>{{$location}}</td>
               </tr>
-              <tr>
-                  <td>Sports:</td>
-                  <td></td>
-              </tr>
+
           </tbody>
       </table>
     </div>

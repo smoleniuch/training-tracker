@@ -13,10 +13,26 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', 'HomeController@index');
 
-Route::get("profile/show/{user_id}",'ProfileController@show');
-Route::get("profile/edit",'ProfileController@edit');
 
-//Route::get("login",'LoginController@showLoginForms');
+
+
+/*
+  PROFILE
+ */
+
+//display user profile
+Route::get("profile/{user_id}",'ProfileController@show');
+
+/*
+  SETTINGS
+ */
+
+//display user edit profile form.
+Route::get('settings/profile','ProfileController@edit');
+Route::post('settings/profile','ProfileController@update');
+
+
+Route::get("login",'LoginController@showLoginForms');
 
 Route::get("/register",function(){
 

@@ -15,11 +15,11 @@ class UserComposer {
 
   }
 
-  public function panel(View $view){
-    
+  public function loggedUserAvatar(View $view){
+
     $view->with([
 
-      'loggedUserAvatar' => $this->loggedUserAvatar
+      'loggedUserAvatarPath' => $this->loggedUserAvatar
 
     ]);
 

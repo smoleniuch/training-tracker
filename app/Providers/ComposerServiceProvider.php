@@ -17,7 +17,7 @@ class ComposerServiceProvider extends ServiceProvider
 
         view()->composer(
 
-          'components.misc.menu-panel','App\Http\ViewComposers\UserComposer@panel'
+          '*','App\Http\ViewComposers\UserComposer@loggedUserAvatar'
 
         );
     }
