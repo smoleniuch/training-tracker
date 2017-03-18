@@ -6,6 +6,7 @@
 	align-items:center;
 }
 
+
 #Logo {
 
 	margin:auto;
@@ -93,7 +94,7 @@ text-align:left;
 
 
 }
-.nav-panel-css > li > a{
+.nav-panel-css > li > a,p{
 
 
 	color: #333;
@@ -125,11 +126,42 @@ p.success {
 }
 
 /**
- * PROFILE DATA CSS
+ * PROFILE DATA
  */
 .profile-show-menu {
 
 	display:table;
 	margin:auto;
+
+}
+/**
+ * SETTINGS PAGES
+ */
+
+/*menu bar*/
+#settings-menu {
+
+	display:table;
+	margin:auto;
+
+}
+
+/*profile*/
+#profile_update_button {
+
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+/**
+ *
+ *	MISC
+ *
+ */
+.max_full_width {
+
+	max-width:100%;
 
 }
