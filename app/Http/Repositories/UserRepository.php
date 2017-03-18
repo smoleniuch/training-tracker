@@ -6,8 +6,17 @@ class UserRepository {
 
   public function getLoggedUserAvatar(){
 
-    
-    return auth()->user()->profile->avatars_path ;
+    if(isset(auth()->user()->profile->avatars_path)){
+
+      return auth()->user()->profile->avatars_path ;
+
+    }
+    else{
+
+      return 'Not found';
+
+    }
+
 
   }
 
