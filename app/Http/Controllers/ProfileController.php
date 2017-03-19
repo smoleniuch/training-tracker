@@ -87,7 +87,8 @@ class ProfileController extends Controller
      */
     public function update(UpdateUserProfile $request, Profile $profile)
     {
-
+      return back();
+      //  dd($request->file('avatar')->store('public/images/avatars'));
     }
 
     /**
