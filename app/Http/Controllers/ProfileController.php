@@ -4,22 +4,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use App\Models\Profile;
-use Illuminate\Http\Request;
-use App\Http\Requests\UpdateUserProfile;
+// use Illuminate\Http\Request;
+// use App\Http\Requests\UpdateUserProfile;
 use Illuminate\Http\Response;
+use App\Services\ProfileService;
 
 class ProfileController extends Controller
 {
 
+  protected $profileService;
   /**
    * Create a new controller instance.
    *
    * @return void
    */
-  public function __construct()
+  public function __construct(ProfileService $profileService)
   {
-      $this->middleware('auth');
 
+      $this->middleware('auth');
+      $this->profileService =  $profileService;
   }
 
     /**
@@ -85,9 +88,10 @@ class ProfileController extends Controller
      * @param  \App\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateUserProfile $request, Profile $profile)
+    public function update()
     {
-      dd($request->toArray());
+
+      $this->profileService->updateProfile();
       //  dd($request->file('avatar')->store('public/images/avatars'));
     }
 

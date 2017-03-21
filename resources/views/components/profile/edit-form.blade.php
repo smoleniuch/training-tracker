@@ -49,7 +49,7 @@
       <div class="input-group">
 
         <label for="age">Age:</label>
-        <input type="text" class="form-control" id="age" size='1' placeholder="">
+        <input type="text" class="form-control" id="age" name="age" size='1' placeholder="">
 
       </div>
 
@@ -74,7 +74,7 @@
 
       <div class="modal-body">
         <label for="about-me">About me:</label>
-        <textarea class="form-control col-xs-12 max_full_width" id="about-me" name="name"></textarea>
+        <textarea class="form-control col-xs-12 max_full_width" id="about-me" name="about_me"></textarea>
 
       </div>
 
