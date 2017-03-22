@@ -39,18 +39,7 @@
           <div class="col-lg-3 col-sm-12 panel">
 
 
-            @if(session()->has('success'))
-
-              <div class="alert alert-success fade in">
-
-                  <a href="" class="close" data-dismiss="alert">&times;</a>
-
-                  {{session()->get('success','')}}
-
-
-              </div>
-
-            @endif
+            
 
 
             @yield('left_panel')

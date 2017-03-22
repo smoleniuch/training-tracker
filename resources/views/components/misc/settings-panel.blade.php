@@ -1,5 +1,16 @@
 <div class="container-fluid">
+  @if(session()->has('settingsMessage'))
 
+    <div class="alert alert-success fade in">
+
+        <a href="" class="close" data-dismiss="alert">&times;</a>
+
+        {{session()->get('settingsMessage','')}}
+
+
+    </div>
+
+  @endif
   <div class="row text-center">
 
 

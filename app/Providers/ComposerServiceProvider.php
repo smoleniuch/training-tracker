@@ -20,6 +20,12 @@ class ComposerServiceProvider extends ServiceProvider
           '*','App\Http\ViewComposers\UserComposer@loggedUserAvatar'
 
         );
+
+        view()->composer(
+
+          'pages.settings.profile','App\Http\ViewComposers\UserComposer@userProfileData'
+
+        );
     }
 
     /**

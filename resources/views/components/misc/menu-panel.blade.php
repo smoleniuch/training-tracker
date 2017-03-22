@@ -1,7 +1,23 @@
+@if(session()->has('welcomeMessage'))
+
+  <div class="alert alert-success fade in">
+
+      <a href="" class="close" data-dismiss="alert">&times;</a>
+
+      {{session()->get('welcomeMessage','')}}
+
+
+  </div>
+
+@endif
+
 <div class="row">
+
     <div class="col-md-4"></div>
 
     <div class="col-md-4">
+
+
         <img class="avatar" src="{{asset($loggedUserAvatarPath)}}">
     </div>
 

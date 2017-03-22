@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use App\Models\Profile;
-// use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 // use App\Http\Requests\UpdateUserProfile;
 use Illuminate\Http\Response;
 use App\Services\ProfileService;
@@ -90,9 +90,13 @@ class ProfileController extends Controller
      */
     public function update()
     {
+      $id = auth()->user()->id;
 
-      $this->profileService->updateProfile();
-      //  dd($request->file('avatar')->store('public/images/avatars'));
+      $this->profileService->updateProfile($id);
+
+      session()->flash('settingsMessage','Profile has been updated');
+
+      return back();
     }
 
     /**

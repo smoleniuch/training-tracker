@@ -28,17 +28,16 @@ Route::get("profile/{user_id}",'ProfileController@show');
  */
 
 //display user edit profile form.
-Route::get('settings/profile','ProfileController@edit');
-Route::post('settings/profile','ProfileController@update');
 
 
-Route::get("login",'LoginController@showLoginForms');
+  Route::get('settings/profile','ProfileController@edit');
+  Route::post('settings/profile','ProfileController@update');
 
-Route::get("/register",function(){
 
-  return view('pages.register');
 
-});
+
+
+
 
 Auth::routes();
 

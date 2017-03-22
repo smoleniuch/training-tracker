@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
 
 class UpdateUserProfile extends FormRequest
 {
@@ -24,8 +25,14 @@ class UpdateUserProfile extends FormRequest
     public function rules()
     {
 
-        return [
 
+        return [
+          'Full_name' => 'String|max:50|nullable',
+          'location' => 'String|max:50|nullable',
+          'age' => 'numeric|between:1,150|nullable',
+          'about_me' => 'String|max:191|nullable'
         ];
     }
+
+
 }

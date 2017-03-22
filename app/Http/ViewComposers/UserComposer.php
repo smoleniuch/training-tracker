@@ -4,14 +4,17 @@ namespace App\Http\ViewComposers;
 
 use Illuminate\View\View;
 use App\Http\Repositories\UserRepository;
+use App\Services\ProfileService;
 
 class UserComposer {
 
-  public $loggedUserAvatar;
+  private $loggedUserAvatar;
+  private $profileService;
 
-  public function __construct(UserRepository $user){
+  public function __construct(UserRepository $user,ProfileService $profileService){
 
     $this->loggedUserAvatar = $user->getloggedUserAvatar();
+    $this->profileService = $profileService;
 
   }
 
@@ -22,6 +25,14 @@ class UserComposer {
       'loggedUserAvatarPath' => $this->loggedUserAvatar
 
     ]);
+
+  }
+
+  public function userProfileData(View $view){
+
+    $profileData = $this->profileService->getProfileData();
+    
+    $view->with($profileData);
 
   }
 

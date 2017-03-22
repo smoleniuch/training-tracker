@@ -1,5 +1,7 @@
 <div class="container-fluid">
 
+  
+
 <form class="" action="" method="post" enctype="multipart/form-data">
   <div class="row">
     <div class="col-sm-4">
@@ -33,29 +35,31 @@
   </div>
     <div class="col-sm-4">
 
-      <div class="input-group">
-        <label for="full_name">Full name:</label>
-        <input type="text" class="form-control" id='full_name' name="full_name" placeholder="">
+      <div class="input-group {{$errors->get('Full_name')?'has-error':''}}">
+        <label for="Full_name">Full name: </label>
+        <span class="help-block">{{$errors->first('Full_name')}}</span>
+        <input type="text" class="form-control" id='Full_name' name="Full_name" value="{{old('Full_name',$full_name)}}">
 
       </div>
 
-      <div class="input-group">
+      <div class="input-group {{$errors->has('location')?'has-error':''}}">
 
         <label for="location">Location:</label>
-        <input type="text" class="form-control" id="location" placeholder="">
+        <span class="help-block">{{$errors->first('location')}}</span>
+        <input type="text" class="form-control" id="location" name="location" value="{{old('location',$location)}}">
 
       </div>
 
-      <div class="input-group">
+      <div class="input-group {{$errors->get('age')?'has-error':''}}">
 
         <label for="age">Age:</label>
-        <input type="text" class="form-control" id="age" name="age" size='1' placeholder="">
-
+        <span class="help-block">{{$errors->first('age')}}</span>
+        <input type="text" class="form-control" id="age" name="age" size='1' value="{{old('age',$age)}}">
       </div>
 
-      <label for="gender">Gender:</label><br>
-      <div class="input-group" >
 
+      <div class="input-group" >
+        <label for="gender">Gender:</label><br>
         <label class="radio-inline">
         <input type="radio"  name="gender" value="male">male
         </label>
@@ -72,9 +76,12 @@
 
     <div class="col-sm-12">
 
-      <div class="modal-body">
-        <label for="about-me">About me:</label>
-        <textarea class="form-control col-xs-12 max_full_width" id="about-me" name="about_me"></textarea>
+      <div class="form-group {{$errors->get('about_me')?'has-error':''}}">
+
+        <label for="about_me">About me:</label>
+        <span class="help-block">{{$errors->first('about_me')}}</span>
+
+        <textarea class="form-control col-xs-12 max_width" id="about_me" name="about_me">{{old('about_me',$about_me)}}</textarea>
 
       </div>
 
