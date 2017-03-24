@@ -66,7 +66,7 @@
     </div>
     <div class="col-md-12">
       <h4 align="center"><strong>About me:</strong></h4>
-      <pre class="pre-scrollable">{{$about_me}}</pre>
+      <pre class="pre about_me">{{$about_me}}</pre>
     </div>
 
 
