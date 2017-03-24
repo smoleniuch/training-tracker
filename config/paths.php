@@ -2,6 +2,6 @@
 
 return [
 
-  'avatars' => 'storage/images/avatars/'
+  'avatars' => 'uploads/images/avatars'
 
 ];

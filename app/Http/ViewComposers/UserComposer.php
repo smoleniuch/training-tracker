@@ -28,10 +28,11 @@ class UserComposer {
 
   }
 
-  public function userProfileData(View $view){
+  public function loggedUserProfileData(View $view){
 
-    $profileData = $this->profileService->getProfileData();
-    
+    $currentUserId = auth()->user()->id;
+    $profileData = $this->profileService->getProfileData($currentUserId);
+
     $view->with($profileData);
 
   }

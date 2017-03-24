@@ -1,6 +1,6 @@
 <div class="container-fluid">
 
-  
+
 
 <form class="" action="" method="post" enctype="multipart/form-data">
   <div class="row">
@@ -56,16 +56,40 @@
         <span class="help-block">{{$errors->first('age')}}</span>
         <input type="text" class="form-control" id="age" name="age" size='1' value="{{old('age',$age)}}">
       </div>
+      {{--Only one gender option is available to choose.--}}
+      <script>
 
+        $(document).ready(function(){
+
+          $("[name='gender']").click(function(){
+
+            var thisCheckStatus = $(this).prop('checked');
+
+            $("[name='gender']").prop('checked',false);
+
+            if(thisCheckStatus){
+
+              $(this).prop('checked',true);
+
+            }
+            else{
+
+              $(this).prop('checked',false);
+
+            }
+
+          })
+
+        })
+
+      </script>
 
       <div class="input-group" >
         <label for="gender">Gender:</label><br>
-        <label class="radio-inline">
-        <input type="radio"  name="gender" value="male">male
-        </label>
-      <label class="radio-inline">
-        <input type="radio" name="gender" value="female">female
-      </label>
+
+        <input type="checkbox"  name="gender" {{$gender == 'male'?'checked=""':''}}  value="male">male
+        <input type="checkbox" name="gender" {{$gender == 'female'?'checked=""':''}} value="female">female
+
     </div>
 
     </div>
@@ -81,7 +105,7 @@
         <label for="about_me">About me:</label>
         <span class="help-block">{{$errors->first('about_me')}}</span>
 
-        <textarea class="form-control col-xs-12 max_width" id="about_me" name="about_me">{{old('about_me',$about_me)}}</textarea>
+        <textarea class="form-control col-xs-12 max_width" id="about_me" rows='8' name="about_me">{{old('about_me',$about_me)}}</textarea>
 
       </div>
 

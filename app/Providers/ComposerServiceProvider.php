@@ -23,7 +23,7 @@ class ComposerServiceProvider extends ServiceProvider
 
         view()->composer(
 
-          'pages.settings.profile','App\Http\ViewComposers\UserComposer@userProfileData'
+          'pages.settings.profile','App\Http\ViewComposers\UserComposer@loggedUserProfileData'
 
         );
     }

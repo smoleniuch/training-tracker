@@ -4,7 +4,7 @@ return [
 
   'profile' => [
 
-    'defaultAvatar' => 'storage/images/avatars/default-avatar.jpeg'
+    'defaultAvatar' => 'uploads/images/avatars/default-avatar.jpeg'
 
   ]
 
