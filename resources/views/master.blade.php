@@ -12,7 +12,9 @@
     <title>Fitness tracker</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/custom-css.css')}}">
+
     <script src="{{asset('js/app.js')}}"></script>
+    <script src="{{asset('js/customJquery.js')}}"></script>
     <script src="{{asset('js/bootstrap-filestyle.min.js')}}"></script>
 
 </head>
@@ -39,7 +41,7 @@
           <div class="col-lg-3 col-sm-12 panel">
 
 
-            
+
 
 
             @yield('left_panel')

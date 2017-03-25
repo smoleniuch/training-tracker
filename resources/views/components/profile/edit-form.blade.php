@@ -56,33 +56,7 @@
         <span class="help-block">{{$errors->first('age')}}</span>
         <input type="text" class="form-control" id="age" name="age" size='1' value="{{old('age',$age)}}">
       </div>
-      {{--Only one gender option is available to choose.--}}
-      <script>
-
-        $(document).ready(function(){
-
-          $("[name='gender']").click(function(){
-
-            var thisCheckStatus = $(this).prop('checked');
-
-            $("[name='gender']").prop('checked',false);
-
-            if(thisCheckStatus){
-
-              $(this).prop('checked',true);
-
-            }
-            else{
-
-              $(this).prop('checked',false);
-
-            }
-
-          })
-
-        })
-
-      </script>
+    
 
       <div class="input-group" >
         <label for="gender">Gender:</label><br>
