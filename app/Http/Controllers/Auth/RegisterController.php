@@ -50,7 +50,7 @@ class RegisterController extends Controller
 
         $rules = [
 
-            'username' => 'required|max:255|alpha-num',
+            'username' => 'required|max:35|alpha-num',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6',
             'confirm_password' => 'required|same:password'
