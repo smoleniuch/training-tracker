@@ -1,3 +1,14 @@
+*{
+
+	background-color:white;
+
+}
+
+.border{
+
+		border:2px solid black;
+
+}
 .header {
 	display:flex;
 	width:min-width;
@@ -24,6 +35,13 @@
 	max-height:100px;
 	display:block;
 	margin:0px auto;
+
+}
+.avatar-mini{
+
+	border-radius:50%;
+	max-width:25px;
+	max-height:25px;
 
 }
 
@@ -135,7 +153,7 @@ p.success {
 
 }
 /**
- * SETTINGS PAGES
+ * Settings pages
  */
 
 /*menu bar*/
@@ -162,12 +180,129 @@ p.success {
 }
 
 /**
+ * Friends page
+ */
+#friends-header{
+
+	text-align: center;
+	font-weight: bold;
+
+}
+#friends-search-panel {
+
+	margin:10px 10px;
+	display:flex;
+
+}
+#friends-search-panel label{
+
+	margin:auto;
+	margin-right: 5px;
+
+}
+#friends-search-panel div[class=input-group-md]{
+
+
+	margin-left: 5px;
+
+}
+#friends-list{
+
+	overflow-x:hidden;
+	padding-left:10px;
+	max-height:400px;
+	word-wrap: break-word;
+	overflow-y:auto;
+
+}
+#friends-list a{
+
+	color:black;
+
+}
+#friends-list a:hover{
+
+	font-weight: bold;
+	text-decoration: none;
+
+}
+#friends-list span[class*="envelope"]{
+
+	margin-right:10px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+#friends-list span[class*="envelope"]:hover{
+
+	transform: scale(1.2);
+	font-weight: bold;
+	text-decoration: none;
+
+}
+#friends-list h4{
+
+	text-align: center;
+
+}
+
+#friends-list hr{
+
+	margin:10px 10px;
+
+}
+
+#find-new-friend h4,p{
+
+	text-align:center;
+
+}
+#search-new-friend-input{
+
+	margin:5px auto;
+
+}
+#invite-random-friend-btn{
+
+	margin:15px auto;
+
+}
+
+/**
  *
  *	MISC
  *
  */
+
+
+
 .max_width {
 
 	max-width:100%;
+
+}
+/* User list*/
+.user-list{
+
+	text-align: left;
+	font-weight: bold;
+
+}
+
+.user-list{
+
+	overflow-x:hidden;
+	padding-left:10px;
+	max-height:250px;
+	word-wrap: break-word;
+	overflow-y:auto;
+
+}
+.user-row hr{
+
+
+		margin:10px 10px;
+
+
 
 }

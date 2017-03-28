@@ -20,24 +20,20 @@ Route::get('/', 'HomeController@index');
   PROFILE
  */
 
-//display user profile
 Route::get("profile/{user_id}",'ProfileController@show');
 
 /*
   SETTINGS
  */
 
-//display user edit profile form.
-
-
   Route::get('settings/profile','ProfileController@edit');
   Route::post('settings/profile','ProfileController@update');
 
+/*
+  FRIENDS
+ */
 
-
-
-
-
+Route::get('/friends','FriendsController@show');
 
 Auth::routes();
 
