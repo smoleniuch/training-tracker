@@ -14,7 +14,7 @@
   <div class="row text-center">
 
 
-    <h4><strong>SETTINGS</strong></h4>
+    <h4><strong>Settings</strong></h4>
 
 
           <div id="settings-menu">
