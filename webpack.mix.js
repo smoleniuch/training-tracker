@@ -14,3 +14,13 @@ const { mix } = require('laravel-mix');
 mix.js('resources/assets/js/app.js', 'public/js')
    .js('node_modules/bootstrap-filestyle/src/bootstrap-filestyle.min.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.stylus('resources/assets/css/friends-page.css','public/css')
+   .stylus('resources/assets/css/custom-css.css','public/css');
+
+mix.styles([
+
+	'public/css/custom-css.css',
+	'public/css/friends-page.css'
+
+],'public/css/allCustomCSS.css');

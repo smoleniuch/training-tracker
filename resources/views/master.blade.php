@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width ,initial-scale=1.0">
     <title>Fitness tracker</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('css/custom-css.css')}}">
+    <link rel="stylesheet" href="{{mix('css/allCustomCSS.css')}}">
 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('js/customJquery.js')}}"></script>
