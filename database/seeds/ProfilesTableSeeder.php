@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Models\Profile;
+use Faker\Factory;
 
 class ProfilesTableSeeder extends Seeder
 {
@@ -12,6 +13,9 @@ class ProfilesTableSeeder extends Seeder
      */
     public function run(Profile $profile)
     {
+
+      $userAmount = 500;
+      $faker = Faker\Factory::create();
       DB::table('users_profiles')->delete();
       $profile->insert(array(
 
@@ -26,5 +30,25 @@ class ProfilesTableSeeder extends Seeder
 
       ));
 
+      for($i = 0; $i < $userAmount ; $i++){
+
+        $profile->insert(array(
+
+
+          "username" => $faker->username,
+          "full_name" => $faker->name,
+          'age'  => $faker->numberBetween(13,115),
+          'gender' => $faker->randomElement(array('male','female')),
+          'location' => $faker->address,
+          'email' => $faker->email,
+          'avatars_path' => $faker->imageUrl($width = 640, $height = 480),
+          'about_me' => $faker->text(800)
+
+        ));
+
+
+      }
+
     }
+
 }
