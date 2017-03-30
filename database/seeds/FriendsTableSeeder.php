@@ -21,7 +21,8 @@ class FriendsTableSeeder extends Seeder
         $friend->insert(array(
 
           'user_id' => $faker->numberBetween(1,50),
-          'group' => $faker->randomElement(array('All','Family','School'))
+          'group' => $faker->randomElement(array('All','Family','School')),
+          'profile_id' => $i
 
         ));
 

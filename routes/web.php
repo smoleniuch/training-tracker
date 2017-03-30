@@ -34,10 +34,9 @@ Route::get("profile/{user_id}",'ProfileController@show');
 /*
   FRIENDS
  */
-
 Route::get('/friends','FriendsController@show');
+Route::get('/friends/{group}','FriendsController@getFriendsRows');
+
+
 
 Auth::routes();
-
-//Route::get('/home', 'HomeController@index');
-// test

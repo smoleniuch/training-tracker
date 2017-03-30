@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="{{mix('css/allCustomCSS.css')}}">
 
     <script src="{{asset('js/app.js')}}"></script>
-    <script src="{{asset('js/customJquery.js')}}"></script>
-    <script src="{{asset('js/bootstrap-filestyle.min.js')}}"></script>
+    <script src="{{asset('js/allCustom.js')}}"></script>
+
 
 </head>
 

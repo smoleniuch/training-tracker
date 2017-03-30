@@ -4,6 +4,7 @@ namespace App\Models;
 
 
 use App\Models\User;
+use App\Models\Friend;
 use Illuminate\Database\Eloquent\Model;
 
 class Profile extends Model
@@ -30,6 +31,12 @@ class Profile extends Model
     public function user(){
 
       return $this->belongsTo('User','id','user_id');
+
+    }
+
+    public function friend(){
+
+      return $this->hasMany('Friend','user_id','user_id');
 
     }
 

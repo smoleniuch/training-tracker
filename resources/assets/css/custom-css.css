@@ -185,7 +185,11 @@ p.success {
  *	MISC
  *
  */
+[class*="glyphicon"] {
 
+	background-color:inherit;
+
+}
 
 
 .max_width {

@@ -17,6 +17,7 @@ class CreateFriendsTable extends Migration
 
           $table->bigIncrements('id');
           $table->integer('user_id');
+          $table->string('profile_id');
           $table->string('group',20);
 
         });

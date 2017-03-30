@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Friend;
+use App\Services\FriendService;
+
 use Illuminate\Http\Request;
 
 class FriendsController extends Controller
@@ -39,14 +41,39 @@ class FriendsController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified resource,user friends page with friends from group "All".
      *
-     * @param  \App\Friend  $friend
      * @return \Illuminate\Http\Response
      */
-    public function show(Friend $friend)
+    public function show()
     {
-        return view('pages.friends.list');
+        $userId = auth()->user()->id;
+
+        $friends = FriendService::getUserFriendsList($userId);
+        $groups = FriendService::getUserFriendsGroups($userId);
+
+        return view('pages.friends.list',[
+
+          'friends' => $friends,
+          'groups'  => $groups
+
+        ]);
+    }
+
+    /**
+     * Generate user rows from specified group.
+     * This method let change displayed user list without reloading page
+     * AJAX request. Check public/js/friendsPageJquery.js
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function getFriendsRows($group = 'All')
+    {
+        $userId = auth()->user()->id;
+
+        $friends = FriendService::getUserFriendsList($userId,$group);
+
+        return FriendService::generateFriendListRows($friends);
     }
 
     /**

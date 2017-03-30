@@ -15,9 +15,12 @@
             </button>
 
 
-           <ul class="dropdown-menu">
-            <li><a href="#">All</a></li>
-            <li><a href="#">Family</a></li>
+           <ul id="friends-group-list" class="dropdown-menu">
+            @foreach($groups as $group)
+
+              <li>{{$group}}</li>
+
+            @endforeach
           </ul>
 
         </div>
@@ -36,13 +39,8 @@
 </div>
 <div id="friends-list">
 
-    @include('components.friends.friend-row')
-    @include('components.friends.friend-row')
-    @include('components.friends.friend-row')
-    @include('components.friends.friend-row')
-    @include('components.friends.friend-row')
-    @include('components.friends.friend-row')
-    @include('components.friends.friend-row')
+
+    @include('components.friends.rows')
 
 
   </div>

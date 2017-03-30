@@ -13,6 +13,8 @@ const { mix } = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .js('node_modules/bootstrap-filestyle/src/bootstrap-filestyle.min.js', 'public/js')
+   .js('resources/assets/js/friendsPageJquery.js', 'public/js')
+   .js('resources/assets/js/settingsPageJquery.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
 
 mix.stylus('resources/assets/css/friends-page.css','public/css')
@@ -24,3 +26,13 @@ mix.styles([
 	'public/css/friends-page.css'
 
 ],'public/css/allCustomCSS.css');
+
+mix.scripts([
+
+	
+    'public/js/friendsPageJquery.js',
+    'public/js/settingsPageJquery.js',
+	'public/js/bootstrap-filestyle.min.js'
+
+], 'public/js/allCustom.js');
+
