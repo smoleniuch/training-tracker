@@ -18,12 +18,6 @@
 #friends-search-panel div[class=input-group-md] {
   margin-left: 5px;
 }
-#current-group-header{
-
-  font-weight:bold;
-  text-align: center;
-
-}
 #friends-list {
   overflow-x: hidden;
   padding-left: 10px;
