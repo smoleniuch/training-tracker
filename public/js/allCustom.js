@@ -10307,7 +10307,7 @@ $(document).ready(function () {
 
     var friendGroup = $(this).html();
 
-    $.get('friends/' + friendGroup, function (data, status) {
+    $.get('friends/group/' + friendGroup, function (data, status) {
 
       if (status === 'success') {
 
