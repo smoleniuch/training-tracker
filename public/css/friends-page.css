@@ -5,6 +5,10 @@
   text-align: center;
   font-weight: bold;
 }
+#friends-menu-panel {
+  display: table;
+  margin: auto auto;
+}
 #friends-search-panel {
   margin: 10px 10px;
   display: -webkit-box;
@@ -17,6 +21,9 @@
 }
 #friends-search-panel div[class=input-group-md] {
   margin-left: 5px;
+}
+#friends-search-panel div.col-md-4 {
+  padding: 0px;
 }
 #current-group-header {
   font-weight: bold;
