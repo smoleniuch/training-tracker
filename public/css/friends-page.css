@@ -10,7 +10,7 @@
   margin: auto auto;
 }
 #friends-search-panel {
-  margin: 10px 10px;
+  margin: 15px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +39,11 @@
 #friends-list a {
   color: #000;
 }
+#friends-list div.row {
+
+  margin:auto 15px;
+
+}
 #friends-list a:hover {
   font-weight: bold;
   text-decoration: none;
@@ -57,7 +62,7 @@
 #friends-list h4 {
   text-align: center;
 }
-#friends-list hr {
+hr {
   margin: 10px 10px;
 }
 #find-new-friend h4,
@@ -71,9 +76,14 @@ p {
   margin: 15px auto;
 }
 /* User list*/
-.user-list {
-  text-align: left;
-  font-weight: bold;
+
+#find-new-friend div.row{
+
+  margin:10px auto;
+  overflow-y:auto;
+  max-height:250px;
+
+
 }
 .user-list {
   overflow-x: hidden;
