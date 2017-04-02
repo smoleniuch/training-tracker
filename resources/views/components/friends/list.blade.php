@@ -1,7 +1,11 @@
-<h4 id="friends-header">Friends</h4>
 
-<div class="row" id="friends-search-panel">
 
+
+
+<div class="row">
+
+
+<span id="friends-search-panel">
 
 
 
@@ -30,13 +34,20 @@
 
 
     <div class="input-group input-group-md">
-      <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-        <input id='filter-friend-list' type="text" class="form-control" size="1" placeholder="Filter list...">
 
 
-  </div>
+        <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+        <div class="col-md-4">
+          <input id='filter-friend-list' type="text" class="form-control"  placeholder="Filter list...">
+        </div>
 
 
+
+
+
+  </span>
+
+</div>
 
 </div>
 <h4 id='current-group-header'>All</h4>
