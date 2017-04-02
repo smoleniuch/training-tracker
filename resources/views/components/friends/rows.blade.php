@@ -3,12 +3,12 @@
 
 <div class="row">
 
-<div class="col-md-12">
+
   <img src="{{$friend->profile->avatars_path}}" class="avatar-mini">
   <a href="sendmessage"><span class="glyphicon glyphicon-envelope"></span></a>
   <a href="/profile/{{$friend->profile->user_id}}">{{$friend->profile->username}}</a>
   <hr>
-</div>
+
 
 
 
