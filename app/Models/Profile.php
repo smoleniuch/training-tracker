@@ -36,7 +36,7 @@ class Profile extends Model
 
     public function friend(){
 
-      return $this->hasMany('Friend','user_id','user_id');
+      return $this->hasMany('Friend','belongs_to_user_id','user_id');
 
     }
 

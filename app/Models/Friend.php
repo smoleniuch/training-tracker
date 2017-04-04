@@ -10,13 +10,13 @@ class Friend extends Model
 {
     public function user(){
 
-      $this->belongsTo('User');
+    return  $this->belongsTo(User::class);
 
     }
 
     public function profile(){
 
-      return $this->belongsTo(Profile::class,'profile_id','user_id');
+      return $this->belongsTo(Profile::class,'profile_id','belongs_to_user_id');
 
     }
 }

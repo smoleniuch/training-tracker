@@ -65,7 +65,7 @@ class FriendsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function showFind()
+    public function showFindFriends()
     {
         $userId = auth()->user()->id;
 

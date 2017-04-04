@@ -16,11 +16,11 @@ class FriendsTableSeeder extends Seeder
         $userAmount = 500;
         DB::table('friends')->delete();
 
-      for ($i=0; $i <$userAmount ; $i++) {
+      for ($i=1; $i <$userAmount ; $i++) {
 
         $friend->insert(array(
 
-          'user_id' => $faker->numberBetween(1,50),
+          'belongs_to_user_id' => $faker->numberBetween(1,50),
           'group' => $faker->randomElement(array('All','Family','School')),
           'profile_id' => $i
 
