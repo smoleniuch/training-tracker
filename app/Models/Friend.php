@@ -16,7 +16,7 @@ class Friend extends Model
 
     public function profile(){
 
-      return $this->belongsTo(Profile::class,'profile_id','belongs_to_user_id');
+      return $this->hasOne(Profile::class,'user_id','profile_id');
 
     }
 }

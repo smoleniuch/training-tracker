@@ -3,7 +3,7 @@
 
 <div class="row">
 
-{{dd($friend->profile)}}
+
   <img src="{{$friend->profile->avatars_path}}" class="avatar-mini">
 
   <a href="sendmessage"><span class="glyphicon glyphicon-envelope"></span></a>

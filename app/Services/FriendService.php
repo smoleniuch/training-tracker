@@ -17,8 +17,9 @@ class FriendService {
    * @return Collection        Collection of App\Models\Friend .
    */
   public static function getUserFriendsList($id,$group = 'All'){
-
-    $friends = User::find($id)->friends()->where('group',$group)->get();
+    // $test = User::find($id)->friends->where('group',$group)->last();
+    // dd(Friend::find(2)->profile);
+    $friends = User::find($id)->friends->where('group',$group);
 
     return $friends;
 

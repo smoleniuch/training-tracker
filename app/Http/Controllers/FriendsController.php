@@ -51,7 +51,7 @@ class FriendsController extends Controller
 
         $friends = FriendService::getUserFriendsList($userId);
         $groups = FriendService::getUserFriendsGroups($userId);
-
+        
         return view('pages.friends.view',[
 
           'friends' => $friends,
