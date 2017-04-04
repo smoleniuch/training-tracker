@@ -11,28 +11,40 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .js('node_modules/bootstrap-filestyle/src/bootstrap-filestyle.min.js', 'public/js')
-   .js('resources/assets/js/friendsPageJquery.js', 'public/js')
-   .js('resources/assets/js/settingsPageJquery.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
 
-mix.stylus('resources/assets/css/friends-page.css','public/css')
-   .stylus('resources/assets/css/custom-css.css','public/css');
-
-mix.styles([
-
-	'public/css/custom-css.css',
-	'public/css/friends-page.css'
-
-],'public/css/allCustomCSS.css');
 
 mix.scripts([
 
-	
-    'public/js/friendsPageJquery.js',
-    'public/js/settingsPageJquery.js',
-	'public/js/bootstrap-filestyle.min.js'
+    'resources/assets/js/friendsPageJquery.js',
+    'resources/assets/js/settingsPageJquery.js',
 
-], 'public/js/allCustom.js');
+], 'resources/assets/js/allCustom.js');
+
+mix.scripts([
+
+    'node_modules/bootstrap-filestyle/src/bootstrap-filestyle.min.js',
+
+], 'resources/assets/js/third-party-modules.js');
+
+
+
+mix.styles([
+
+	'resources/assets/css/friends-page.css',
+	'resources/assets/css/custom-css.css'
+
+],'resources/assets/css/allCustomCSS.css');
+
+mix.js('resources/assets/js/app.js', 'public/js')
+   .js('resources/assets/js/allCustom.js', 'public/js')
+   .js('resources/assets/js/third-party-modules.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.stylus('resources/assets/css/allCustomCSS.css','public/css')
+
+
+
+
+
+
 
