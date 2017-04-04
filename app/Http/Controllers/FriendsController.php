@@ -51,7 +51,7 @@ class FriendsController extends Controller
 
         $friends = FriendService::getUserFriendsList($userId);
         $groups = FriendService::getUserFriendsGroups($userId);
-
+        
         return view('pages.friends.view',[
 
           'friends' => $friends,
@@ -65,7 +65,7 @@ class FriendsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function showFind()
+    public function showFindFriends()
     {
         $userId = auth()->user()->id;
 

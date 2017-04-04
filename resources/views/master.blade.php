@@ -15,6 +15,7 @@
 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('js/allCustom.js')}}"></script>
+    <script src="{{asset('js/third-party-modules.js')}}"></script>
 
 
 </head>

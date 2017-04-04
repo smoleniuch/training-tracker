@@ -30,15 +30,15 @@ class Profile extends Model
 
     public function user(){
 
-      return $this->belongsTo('User','id','user_id');
+      return $this->belongsTo(User::class,'id','user_id');
 
     }
 
-    public function friend(){
-
-      return $this->hasMany('Friend','user_id','user_id');
-
-    }
+    // public function friend(){
+    //
+    //   return $this->hasMany(Friend::class,'belongs_to_user_id','user_id');
+    //
+    // }
 
 
 

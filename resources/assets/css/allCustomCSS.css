@@ -1,0 +1,297 @@
+/**
+ * Friends page
+ */
+#friends-header {
+  text-align: center;
+  font-weight: bold;
+}
+#friends-menu-panel {
+  display: table;
+  margin: auto auto;
+}
+#friends-search-panel {
+  margin: 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#friends-search-panel label {
+  margin: auto;
+  margin-right: 5px;
+}
+#friends-search-panel div[class=input-group-md] {
+  margin-left: 5px;
+}
+#friends-search-panel div.col-md-4 {
+  padding: 0px;
+}
+#current-group-header {
+  font-weight: bold;
+  text-align: center;
+}
+#friends-list {
+  overflow-x: hidden;
+  padding-left: 10px;
+  max-height: 400px;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+#friends-list a {
+  color: #000;
+}
+#friends-list div.row {
+
+  margin:auto 15px;
+
+}
+#friends-list a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+#friends-list span[class*="envelope"] {
+  margin-right: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#friends-list span[class*="envelope"]:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: bold;
+  text-decoration: none;
+}
+#friends-list h4 {
+  text-align: center;
+}
+hr {
+  margin: 10px 10px;
+}
+#find-new-friend h4,
+p {
+  text-align: center;
+}
+#search-new-friend-input {
+  margin: 5px auto;
+}
+#invite-random-friend-btn {
+  margin: 15px auto;
+}
+/* User list*/
+
+#find-new-friend div.row{
+
+  margin:10px auto;
+  overflow-y:auto;
+  max-height:250px;
+
+
+}
+.user-list {
+  overflow-x: hidden;
+  padding-left: 10px;
+  max-height: 250px;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+.user-row hr {
+  margin: 10px 10px;
+}
+
+*{
+
+	background-color:white;
+
+}
+
+.border{
+
+		border:2px solid black;
+
+}
+.header {
+	display:flex;
+	width:min-width;
+	height:150px;
+	border:2px solid black;
+	align-items:center;
+}
+
+
+#Logo {
+
+	margin:auto;
+	height:10px;
+	display:table;
+	width:fit-content;
+	border:2px solid black;
+
+}
+
+.avatar{
+
+	border-radius:50%;
+	max-width:100px;
+	max-height:100px;
+	display:block;
+	margin:0px auto;
+
+}
+.avatar-mini{
+
+	border-radius:50%;
+	max-width:50px;
+	max-height:50px;
+
+}
+
+.panel {
+
+	margin:0px;
+	padding:15px;
+	border:2px solid black;
+
+	color: black;
+	/*height:500px;*/
+
+}
+
+.content {
+
+	/*text-align:center;*/
+	padding:15px;
+	margin:0px;
+	min-height:500px;
+	border:2px solid black;
+
+}
+#profile-credentials{
+
+	margin:auto auto;
+	width:50%;
+
+	display: block;
+
+}
+#login-form {
+
+
+text-align:left;
+	/* border:2px solid black; */
+	/* //vertical-align:center; */
+	margin:auto 5px;
+}
+
+#register-button {
+
+	display:inline;
+	float:right;
+	margin:10px 5px;
+	/* border:2px solid black; */
+
+}
+
+#login-button {
+
+	display:inline;
+	margin:10px 5px;
+	/* border:2px solid black; */
+
+}
+
+.alert {
+
+	margin:10px 0px;
+
+
+}
+#log-out-button{
+
+	display:block;
+	margin:10px auto;
+
+
+}
+.nav-panel-css > li > a,p{
+
+
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+
+}
+.nav-panel-css > li > a:focus{
+
+
+	color: #333;
+	background-color: #eee;
+	border-color: #ccc;
+	border:1px solid;
+
+}
+.error{
+
+  margin:5px;
+	color:red;
+
+}
+p.success {
+
+	text-align:center;
+	margin:5px;
+	color:green;
+
+}
+
+/**
+ * PROFILE DATA
+ */
+.profile-show-menu {
+
+	display:table;
+	margin:auto;
+
+}
+/**
+ * Settings pages
+ */
+
+/*menu bar*/
+#settings-menu {
+
+	display:table;
+	margin:auto;
+
+}
+
+/*profile*/
+#profile_update_button {
+
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.about_me {
+
+	white-space: pre-line;
+
+}
+
+
+/**
+ *
+ *	MISC
+ *
+ */
+[class*="glyphicon"] {
+
+	background-color:inherit;
+
+}
+
+
+.max_width {
+
+	max-width:100%;
+
+}

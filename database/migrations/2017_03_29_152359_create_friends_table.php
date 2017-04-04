@@ -16,7 +16,7 @@ class CreateFriendsTable extends Migration
         Schema::create('friends',function(Blueprint $table){
 
           $table->bigIncrements('id');
-          $table->integer('user_id');
+          $table->integer('belongs_to_user_id');
           $table->string('profile_id');
           $table->string('group',20);
 
