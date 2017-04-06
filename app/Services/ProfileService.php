@@ -30,7 +30,7 @@ class ProfileService {
    */
   public function updateProfile($id){
 
-
+    
     $profileDataToUpdate = $this->updateRequest->except('avatar');
 
     //set gender as empty string if gender is not specified.

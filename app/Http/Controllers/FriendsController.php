@@ -4,11 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\Friend;
 use App\Services\FriendService;
+use App\Services\UserSearchEngineService;
 
 use Illuminate\Http\Request;
 
 class FriendsController extends Controller
 {
+
+    private $friendService;
+
+    public function __construct(FriendService $friendService){
+
+      $this->friendService = $friendService;
+
+    }
     /**
      * Display a listing of the resource.
      *
@@ -49,9 +58,9 @@ class FriendsController extends Controller
     {
         $userId = auth()->user()->id;
 
-        $friends = FriendService::getUserFriendsList($userId);
-        $groups = FriendService::getUserFriendsGroups($userId);
-        
+        $friends = $this->friendService->getAllUserFriends($userId);
+        $groups = $this->friendService->getUserFriendsGroups($userId);
+
         return view('pages.friends.view',[
 
           'friends' => $friends,
@@ -67,17 +76,29 @@ class FriendsController extends Controller
      */
     public function showFindFriends()
     {
+        // dd($userBrowser->findUserByUsername('a',1,15));
         $userId = auth()->user()->id;
 
-        $friends = FriendService::getUserFriendsList($userId);
-        $groups = FriendService::getUserFriendsGroups($userId);
+        $friends = $this->friendService->getAllUserFriends($userId);
+        $groups = $this->friendService->getUserFriendsGroups($userId);
 
         return view('pages.friends.find',[
 
-          'friends' => $friends,
-          'groups'  => $groups
+          'users' => $friends
 
         ]);
+    }
+
+    public function getSearchedUserRows(Request $request,UserSearchEngineService $userBrowser){
+
+      $searchValue = $request->searchValue;
+      $offset = $request->offset;
+      $amount = $request->amount;
+      
+      $users = $userBrowser->findUserByUsername($searchValue,$offset,$amount);
+
+      return $this->friendService->generateSearchedNewFriendsRows($users);
+
     }
 
     /**
@@ -87,13 +108,13 @@ class FriendsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getFriendsRows($group = 'All')
+    public function getFriendsRows($group)
     {
         $userId = auth()->user()->id;
 
-        $friends = FriendService::getUserFriendsList($userId,$group);
+        $friends = $this->friendService->getUserFriendsFromGroup($userId,$group);
 
-        return FriendService::generateFriendListRows($friends);
+        return $this->friendService->generateFriendListRows($friends);
     }
 
     /**

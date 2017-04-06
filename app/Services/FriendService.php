@@ -11,15 +11,33 @@ class FriendService {
 
 
   /**
-   * Get all users friends profiles in specified group.
+   * Get all users friends in specified group.
    * @param  int  $id users id for whom group will be loaded
    * @param  string $group friends group
    * @return Collection        Collection of App\Models\Friend .
    */
-  public static function getUserFriendsList($id,$group = 'All'){
-    // $test = User::find($id)->friends->where('group',$group)->last();
+  public function getUserFriendsFromGroup($id,$group){
+
+    if($group == 'All'){
+
+      $friends = $this->getAllUserFriends($id);
+
+    }
+    else{
+
+      $friends = User::find($id)->friends->where('group',$group);
+
+    }
     // dd(Friend::find(2)->profile);
-    $friends = User::find($id)->friends->where('group',$group);
+
+
+    return $friends;
+
+  }
+  public function getAllUserFriends($id){
+
+    // dd(Friend::find(2)->profile);
+    $friends = User::find($id)->friends->unique('profile_id');
 
     return $friends;
 
@@ -29,7 +47,7 @@ class FriendService {
    * @param  int $id user id
    * @return  Collection    all users friends groups.
    */
-  public static function getUserFriendsGroups($id){
+  public function getUserFriendsGroups($id){
 
 
     $groups = User::find($id)->friends()
@@ -46,13 +64,22 @@ class FriendService {
    * @param  Collection of App\Models\Friend $friends
    * @return View          [description]
    */
-  public static function generateFriendListRows(Collection $friends){
+  public function generateFriendListRows(Collection $friends){
 
     return view('components.friends.rows')->with('friends',$friends);
 
   }
 
-  // public static function generateFriendList()
+  /**
+   * Generate found user rows
+   * @param  Collection $foundUsers user that were found
+   * @return View                 found user rows
+   */
+  public function generateSearchedNewFriendsRows(Collection $foundUsers){
+    
+    return view('components.friends.searched-user-rows')->with('users',$foundUsers);
+
+  }
 
 
 

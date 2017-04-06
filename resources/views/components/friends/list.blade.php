@@ -21,7 +21,7 @@
 
 
            <ul id="friends-group-list" class="dropdown-menu">
-
+             <li>All</li>
             @foreach($groups as $group)
 
               <li>{{$group}}</li>

@@ -24,6 +24,7 @@
   "dependencies": {
     "bootstrap": "latest",
     "bootstrap-filestyle": "git+https://github.com/markusslima/bootstrap-filestyle.git",
+	"jscroll" : "https://github.com/pklauzinski/jscroll.git",
     "gulp": "^3.8.8",
     "jquery": "latest",
     "laravel-elixir": "^2.0.0",

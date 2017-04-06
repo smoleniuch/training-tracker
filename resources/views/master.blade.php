@@ -11,13 +11,20 @@
     <meta name="viewport" content="width=device-width ,initial-scale=1.0">
     <title>Fitness tracker</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('css/allCustomCSS.css')}}">
+    <link rel="stylesheet" href="{{asset('css/combinedCustomCSS.css')}}">
 
     <script src="{{asset('js/app.js')}}"></script>
-    <script src="{{asset('js/allCustom.js')}}"></script>
     <script src="{{asset('js/third-party-modules.js')}}"></script>
+    <script src="{{asset('js/combinedCustomJS.js')}}"></script>
 
 
+
+
+
+
+
+
+    <meta name="csrf_token" content="{{csrf_token()}}">
 </head>
 
 <body>

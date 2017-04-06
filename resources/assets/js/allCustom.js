@@ -1,6 +1,11 @@
 
 
 $(document).ready(function(){
+
+  /**
+   * Friends View Page
+   */
+
   //load chosen group into the friends list.
   $('#friends-group-list > li').click(function(){
 
@@ -52,6 +57,18 @@ $(document).ready(function(){
      });
 
   });
+
+
+  /**
+   * Friends Find Page
+   */
+  $('#search-new-friend-input').bind('input propertychange keyup click',function(){
+
+    var inputText = $(this).val();
+    console.log(1);
+
+  });
+
 
 });
 

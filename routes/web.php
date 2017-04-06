@@ -37,6 +37,8 @@ Route::get("profile/{user_id}",'ProfileController@show');
 Route::get('/friends','FriendsController@show');
 Route::get('/friends/group/{group}','FriendsController@getFriendsRows');
 Route::get('/friends/find','FriendsController@showFindFriends');
+Route::post('/friends/find','FriendsController@getSearchedUserRows');
+Route::get('/friends/test','FriendsController@getSearchedUserRows');
 
 
 
