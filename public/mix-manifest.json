@@ -3,11 +3,11 @@
   "/css/app.css": "/css/app.css",
   "/css/custom-css.css": "/css/custom-css.css",
   "/css/friends-page.css": "/css/friends-page.css",
-  "/js/jquery.jscroll.min.js": "/js/jquery.jscroll.min.js",
+  "/js/jquery.jscroll.js": "/js/jquery.jscroll.js",
   "/js/settingsPageJquery.js": "/js/settingsPageJquery.js",
   "/js/friendsPageJquery.js": "/js/friendsPageJquery.js",
   "/js/bootstrap-filestyle.min.js": "/js/bootstrap-filestyle.min.js",
-  "/js/third-party-modules.js": "/js/third-party-modules.js",
+  "/css/combinedCustomCSS.css": "/css/combinedCustomCSS.css",
   "/js/combinedCustomJS.js": "/js/combinedCustomJS.js",
-  "/css/combinedCustomCSS.css": "/css/combinedCustomCSS.css"
+  "/js/third-party-modules.js": "/js/third-party-modules.js"
 }
