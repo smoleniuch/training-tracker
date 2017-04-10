@@ -1,13 +1,14 @@
 {
   "/js/app.js": "/js/app.js",
+  "/css/friends-page.css": "/css/friends-page.css",
   "/css/app.css": "/css/app.css",
   "/css/custom-css.css": "/css/custom-css.css",
-  "/css/friends-page.css": "/css/friends-page.css",
+  "/js/lodash.min.js": "/js/lodash.min.js",
   "/js/jquery.jscroll.js": "/js/jquery.jscroll.js",
   "/js/settingsPageJquery.js": "/js/settingsPageJquery.js",
   "/js/friendsPageJquery.js": "/js/friendsPageJquery.js",
   "/js/bootstrap-filestyle.min.js": "/js/bootstrap-filestyle.min.js",
-  "/css/combinedCustomCSS.css": "/css/combinedCustomCSS.css",
+  "/js/third-party-modules.js": "/js/third-party-modules.js",
   "/js/combinedCustomJS.js": "/js/combinedCustomJS.js",
-  "/js/third-party-modules.js": "/js/third-party-modules.js"
+  "/css/combinedCustomCSS.css": "/css/combinedCustomCSS.css"
 }
