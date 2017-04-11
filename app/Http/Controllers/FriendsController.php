@@ -84,7 +84,7 @@ class FriendsController extends Controller
 
         return view('pages.friends.find',[
 
-          'users' => $friends
+          'users' => []
 
         ]);
     }
@@ -94,7 +94,7 @@ class FriendsController extends Controller
       $searchValue = $request->searchValue;
       $offset = $request->offset;
       $amount = $request->amount;
-      
+
       $users = $userBrowser->findUserByUsername($searchValue,$offset,$amount);
 
       return $this->friendService->generateSearchedNewFriendsRows($users);
@@ -123,9 +123,9 @@ class FriendsController extends Controller
      * @param  \App\Friend  $friend
      * @return \Illuminate\Http\Response
      */
-    public function edit(Friend $friend)
+    public function manage(Friend $friend)
     {
-        //
+        return view('pages.friends.manage');
     }
 
     /**

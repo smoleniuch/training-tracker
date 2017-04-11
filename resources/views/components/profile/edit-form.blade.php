@@ -34,11 +34,11 @@
 
   </div>
     <div class="col-sm-4">
-
-      <div class="input-group {{$errors->get('Full_name')?'has-error':''}}">
-        <label for="Full_name">Full name: </label>
-        <span class="help-block">{{$errors->first('Full_name')}}</span>
-        <input type="text" class="form-control" id='Full_name' name="Full_name" value="{{old('Full_name',$full_name)}}">
+      {{-- {{dd($errors)}} --}}
+      <div class="input-group {{$errors->get('full_name')?'has-error':''}}">
+        <label for="full_name">Full name: </label>
+        <span class="help-block">{{$errors->first('full_name')}}</span>
+        <input type="text" class="form-control" id='full_name' name="full_name" value="{{old('full_name',$full_name)}}">
 
       </div>
 
@@ -56,7 +56,7 @@
         <span class="help-block">{{$errors->first('age')}}</span>
         <input type="text" class="form-control" id="age" name="age" size='1' value="{{old('age',$age)}}">
       </div>
-    
+
 
       <div class="input-group" >
         <label for="gender">Gender:</label><br>

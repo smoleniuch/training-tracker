@@ -27,7 +27,7 @@ class UpdateUserProfile extends FormRequest
 
 
         return [
-          'Full_name' => 'String|max:50|nullable',
+          'full_name' => 'alpha|max:50|nullable',
           'location' => 'String|max:50|nullable',
           'age' => 'numeric|between:1,150|nullable',
           'about_me' => 'String|max:1000|nullable'

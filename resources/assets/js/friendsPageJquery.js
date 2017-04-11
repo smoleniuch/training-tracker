@@ -65,20 +65,20 @@ $(document).ready(function() {
 
     (function() {
 
-            var inputElement = $('#search-new-friend-input input');
-            var csrfTokenValue = $('[name="csrf_token"]').attr('content');
-            var currentUsers = $('#searched-user-rows');
-            var loadingGif = $('#friend-searching-gif');
-            var skipRecords = 0;
-            var amountOfRecords = 15;
-            //ajax request
-            //debounce method is from lodash library
-            //it prevents sending ajax request on each letter change.
-            //it fires up after 1s of inactivity.
+        var inputElement = $('#search-new-friend-input input');
+        var csrfTokenValue = $('[name="csrf_token"]').attr('content');
+        var currentUsers = $('#searched-user-rows');
+        var loadingGif = $('#friend-searching-gif');
+        var skipRecords = 0;
+        var amountOfRecords = 15;
+        //ajax request
+        //debounce method is from lodash library
+        //it prevents sending ajax request on each letter change.
+        //it fires up after 1s of inactivity.
 
-            inputElement.on('input propertychange',_.debounce(function(){
+        inputElement.on('input propertychange', _.debounce(function() {
 
-              loadingGif.fadeIn('slow');
+                loadingGif.fadeIn('slow');
 
                 var inputText = inputElement.val().trim();
 
@@ -105,58 +105,55 @@ $(document).ready(function() {
 
 
                 loadingGif.fadeOut('slow');
-            },1000)
+            }, 1000)
 
 
-            );
+        );
 
         //if you scroll to the bottom fetch another max 15 records and append them.
 
         currentUsers.scroll(_.throttle(function() {
-          //it prevents for sending request.
+            //it prevents for sending request.
 
-          if( currentUsers.find('p:contains("No more results...")').length !== 0 ){
+            if (currentUsers.find('p:contains("No more results...")').length !== 0) {
 
-            return false;
+                return false;
 
-          }
-          //if scroll button reach bottom send request.
-          if ($(this).scrollTop() + $(this).height() == $(this)[0].scrollHeight) {
+            }
+            //if scroll button reach bottom send request.
+            if ($(this).scrollTop() + $(this).height() == $(this)[0].scrollHeight) {
 
-              loadingGif.fadeIn('slow');
+                loadingGif.fadeIn('slow');
 
-              var inputText = inputElement.val().trim();
+                var inputText = inputElement.val().trim();
 
-              skipRecords += amountOfRecords;
+                skipRecords += amountOfRecords;
 
-              var ajaxUsersRowsRequest = getUsersRowsRequest(inputText, skipRecords, amountOfRecords, csrfTokenValue);
+                var ajaxUsersRowsRequest = getUsersRowsRequest(inputText, skipRecords, amountOfRecords, csrfTokenValue);
 
-              ajaxUsersRowsRequest.done(function(data, status, request) {
+                ajaxUsersRowsRequest.done(function(data, status, request) {
 
-                  if (status == 'success') {
-                    loadingGif.fadeOut('slow');
-                      if(data.length == 0){
-
-
-                        currentUsers.append('<p>No more results...</p>')
-
-                      }
-
-                      else{
-
-                        currentUsers.append(data);
-
-                      }
+                    if (status == 'success') {
+                        loadingGif.fadeOut('slow');
+                        if (data.length == 0) {
 
 
-                  }
+                            currentUsers.append('<p>No more results...</p>')
+
+                        } else {
+
+                            currentUsers.append(data);
+
+                        }
 
 
-              });
+                    }
 
-          }
-        }
-      ,500));
+
+                });
+
+            }
+        }, 500));
 
         /**
          * Make ajax request.
