@@ -81,8 +81,20 @@ p {
 
   margin:10px auto;
   overflow-y:auto;
-  max-height:250px;
+  max-height:450px;
 
+
+}
+#friend-searching-gif{
+
+  display:none;
+  float:right;
+  padding-right:0px;
+
+}
+.friend-search-field{
+
+  max-height:36px;
 
 }
 .user-list {

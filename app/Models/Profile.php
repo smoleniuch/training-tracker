@@ -23,7 +23,8 @@ class Profile extends Model
       'email',
       'gender',
       'location',
-      'username'
+      'username',
+      'full_name'
 
 
     ];

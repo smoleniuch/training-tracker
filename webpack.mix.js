@@ -17,27 +17,30 @@ const { mix } = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .js('node_modules/bootstrap-filestyle/src/bootstrap-filestyle.min.js', 'public/js')
+   .js('node_modules/lodash/lodash.min.js', 'public/js')
    .js('node_modules/jscroll/jquery.jscroll.js', 'public/js')
    .js('resources/assets/js/friendsPageJquery.js','public/js')
-   .js('resources/assets/js/settingsPageJquery.js','public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   .js('resources/assets/js/settingsPageJquery.js','public/js');
 
-mix.stylus('resources/assets/css/custom-css.css','public/css')
-   .stylus('resources/assets/css/friends-page.css','public/css');
+mix.sass('resources/assets/sass/friends-page.scss','public/css')
+   .sass('resources/assets/sass/app.scss','public/css');
+
+mix.stylus('resources/assets/css/custom-css.css','public/css');
 
 
 
-   mix.styles([
 
-     'public/css/custom-css.css',
-     'public/css/friends-page.css'
+mix.styles([
 
-   ],'public/css/combinedCustomCSS.css');
+  'public/css/custom-css.css',
+  'public/css/friends-page.css'
+
+  ],'public/css/combinedCustomCSS.css');
 
 mix.scripts([
 
-    'public/js/friendsPageJquery.js',
-    'public/js/settingsPageJquery.js',
+  'public/js/friendsPageJquery.js',
+  'public/js/settingsPageJquery.js'
 
 
 ], 'public/js/combinedCustomJS.js');
@@ -45,6 +48,9 @@ mix.scripts([
 mix.scripts([
 
   'public/js/bootstrap-filestyle.min.js',
-  'public/js/jquery.jscroll.js'
+  'public/js/jquery.jscroll.js',
+  'public/js/lodash.min.js'
 
 ], 'public/js/third-party-modules.js');
+
+mix.copy('resources/views/gifs', 'public/gifs');
