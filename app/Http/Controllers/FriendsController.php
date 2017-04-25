@@ -11,11 +11,14 @@ use Illuminate\Http\Request;
 class FriendsController extends Controller
 {
 
-    private $friendService;
+    private $friendService,
+            $userId;
+
 
     public function __construct(FriendService $friendService){
 
       $this->friendService = $friendService;
+      $this->userId = auth()->user()->id;
 
     }
     /**
@@ -56,10 +59,9 @@ class FriendsController extends Controller
      */
     public function show()
     {
-        $userId = auth()->user()->id;
 
-        $friends = $this->friendService->getAllUserFriends($userId);
-        $groups = $this->friendService->getUserFriendsGroups($userId);
+        $friends = $this->friendService->getAllUserFriends($this->userId);
+        $groups = $this->friendService->getUserFriendsGroups($this->userId);
 
         return view('pages.friends.view',[
 
@@ -76,19 +78,16 @@ class FriendsController extends Controller
      */
     public function showFindFriends()
     {
-        // dd($userBrowser->findUserByUsername('a',1,15));
-        $userId = auth()->user()->id;
 
-        $friends = $this->friendService->getAllUserFriends($userId);
-        $groups = $this->friendService->getUserFriendsGroups($userId);
+        return view('pages.friends.find');
 
-        return view('pages.friends.find',[
-
-          'users' => []
-
-        ]);
     }
-
+    /**
+     * Get users records
+     * @param  Request                 $request
+     * @param  UserSearchEngineService $userBrowser
+     * @return View                               user list items
+     */
     public function getSearchedUserRows(Request $request,UserSearchEngineService $userBrowser){
 
       $searchValue = $request->searchValue;
@@ -108,13 +107,20 @@ class FriendsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getFriendsRows($group)
+    public function getFriendsList($group)
     {
-        $userId = auth()->user()->id;
 
-        $friends = $this->friendService->getUserFriendsFromGroup($userId,$group);
+        $friends = $this->friendService->getUserFriendsFromGroup($this->userId,$group);
 
-        return $this->friendService->generateFriendListRows($friends);
+        return $this->friendService->generateViewFriendRows($friends);
+    }
+
+    public function getManageFriendsList($group)
+    {
+
+        $friends = $this->friendService->getUserFriendsFromGroup($this->userId,$group);
+
+        return $this->friendService->generateManageFriendRows($friends);
     }
 
     /**
@@ -123,9 +129,10 @@ class FriendsController extends Controller
      * @param  \App\Friend  $friend
      * @return \Illuminate\Http\Response
      */
-    public function manage(Friend $friend)
+    public function showManage(Friend $friend)
     {
-        return view('pages.friends.manage');
+
+        return $this->friendService->generateManageList($this->userId);
     }
 
     /**

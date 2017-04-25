@@ -11,8 +11,7 @@ use App\Services\ProfileService;
 
 class ProfileController extends Controller
 {
-
-  protected $profileService;
+    protected $profileService;
   /**
    * Create a new controller instance.
    *
@@ -41,7 +40,6 @@ class ProfileController extends Controller
      */
     public function create(Profile $profile, $credentials)
     {
-
     }
 
     /**
@@ -50,7 +48,7 @@ class ProfileController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Profile $profile,$credentials)
+    public function store(Profile $profile, $credentials)
     {
         $profile->insert($credentials);
     }
@@ -63,7 +61,6 @@ class ProfileController extends Controller
      */
     public function show(Profile $user_id)
     {
-
         $profileData = $user_id->toArray();
 
 
@@ -90,13 +87,14 @@ class ProfileController extends Controller
      */
     public function update()
     {
-      $id = auth()->user()->id;
+        
+        $id = auth()->user()->id;
 
-      $this->profileService->updateProfile($id);
+        $this->profileService->updateProfile($id);
 
-      session()->flash('settingsMessage','Profile has been updated');
+        session()->flash('settingsMessage', 'Profile has been updated');
 
-      return back();
+        return back();
     }
 
     /**

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFriendsTable extends Migration
+class FriendFriendGroups extends Migration
 {
     /**
      * Run the migrations.
@@ -13,24 +13,13 @@ class CreateFriendsTable extends Migration
      */
     public function up()
     {
+        Schema::create('friend_friend_groups',function(Blueprint $table){
 
-        Schema::create('friends',function(Blueprint $table){
-
-
-
-          $table->increments('id');
-          $table->unsignedInteger('user_id')->nullable();
-          $table->unsignedInteger('friends_id')->nullable();
-
-
+          $table->unsignedInteger('friend_id')->nullable();
+          $table->unsignedInteger('friend_group_id')->nullable();
+          $table->primary(['friend_id','friend_group_id']);
 
         });
-
-
-
-
-
-
     }
 
     /**
@@ -40,7 +29,6 @@ class CreateFriendsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('friends');
-
+        Schema::dropIfExists('friend_friend_groups');
     }
 }

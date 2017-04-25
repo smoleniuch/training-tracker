@@ -35,11 +35,13 @@ Route::get("profile/{user_id}",'ProfileController@show');
   FRIENDS
  */
 Route::get('/friends','FriendsController@show');
-Route::get('/friends/group/{group}','FriendsController@getFriendsRows');
 Route::get('/friends/find','FriendsController@showFindFriends');
 Route::post('/friends/find','FriendsController@getSearchedUserRows');
 
-Route::get('/friends/manage','FriendsController@manage');
+Route::get('/friends/group/{group}','FriendsController@getFriendsList');
+Route::get('/friends/manage/group/{group}','FriendsController@getManageFriendsList');
+
+Route::get('/friends/manage','FriendsController@showManage');
 
 
 

@@ -30,6 +30,7 @@ class UsersTableSeeder extends Seeder
 
         Profile::create(array(
 
+          "user_id" => 1,
           "username" => 'janko',
           "full_name" => $faker->name,
           'age'  => $faker->numberBetween(13,115),
@@ -56,6 +57,7 @@ class UsersTableSeeder extends Seeder
 
         Profile::create(array(
 
+          "user_id" => $i+2,
           "username" => $username,
           "full_name" => $faker->name,
           'age'  => $faker->numberBetween(13,115),

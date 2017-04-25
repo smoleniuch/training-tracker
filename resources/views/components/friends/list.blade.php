@@ -20,14 +20,17 @@
 
 
 
-           <ul id="friends-group-list" class="dropdown-menu">
-             <li>All</li>
+           <div id="friends-group-list" class="dropdown-menu" aria-labelledby="friend-group-button">
+             <li><a role="button">All</a></li>
             @foreach($groups as $group)
 
-              <li>{{$group}}</li>
+              <li><a role="button">{{$group->name}}</a></li>
+
+
 
             @endforeach
-          </ul>
+
+          </div>
 
         </div>
 
@@ -51,10 +54,10 @@
 
 </div>
 <h4 id='current-group-header'>All</h4>
-<div id="friends-list">
 
+{{$userList or ''}}
+@section('user-list')
 
-    @include('components.friends.rows')
+    @include('components.friends.view-friend-rows')
 
-
-  </div>
+@show
