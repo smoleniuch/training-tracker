@@ -52,7 +52,7 @@ class ProfileService {
     $profile = $this->profileModel::find($id);
 
     $profile->fill($profileDataToUpdate);
-    
+
     $profile->save();
 
 
@@ -69,7 +69,7 @@ class ProfileService {
 
     //if id is not specified get id of user that are logged in.
 
-
+    
     $profileData = $this->profileModel::find($id)->toArray();
 
     return $profileData;

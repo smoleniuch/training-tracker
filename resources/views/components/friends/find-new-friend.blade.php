@@ -22,14 +22,12 @@
   </div>
 
 </div>
-<div id ="searched-user-rows" class="row user-list">
 
 
-    @include('components.friends.searched-user-rows')
+  <ul id ="searched-user-rows" class="list-group user-list">
 
+    @include('components.friends.search-user-rows')
 
-
-</div>
-
+  </ul>
 
 </div>

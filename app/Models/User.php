@@ -5,8 +5,10 @@ namespace App\Models;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+
 use App\Models\Profile;
 use App\Models\Friend;
+use App\Models\FriendGroups;
 
 class User extends Authenticatable
 {
@@ -38,7 +40,13 @@ class User extends Authenticatable
 
     public function friends(){
 
-      return $this->hasMany(Friend::class,'belongs_to_user_id');
+      return $this->hasMany(Friend::class,'user_id');
+
+    }
+
+    public function friendGroups(){
+
+      return $this->hasMany(FriendGroups::class,'user_id');
 
     }
 }

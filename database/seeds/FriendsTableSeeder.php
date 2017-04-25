@@ -20,9 +20,8 @@ class FriendsTableSeeder extends Seeder
 
         $friend->insert(array(
 
-          'belongs_to_user_id' => 1,
-          'group' => $faker->randomElement(array('Boxing','Family','School')),
-          'profile_id' => $i
+          'user_id' => 1,
+          'friends_id' => $i
 
         ));
 

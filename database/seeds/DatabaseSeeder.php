@@ -13,5 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call('UsersTableSeeder');
         $this->call('FriendsTableSeeder');
+        $this->call('FriendsGroupTableSeeder');
+        $this->call('FriendsFriendsGroupPivotTableSeeder');
     }
 }
