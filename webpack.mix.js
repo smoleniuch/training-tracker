@@ -1,4 +1,6 @@
 const { mix } = require('laravel-mix');
+const path = require('path')
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 /*
  |--------------------------------------------------------------------------
@@ -11,19 +13,61 @@ const { mix } = require('laravel-mix');
  |
  */
 
+ mix.webpackConfig({
 
+   plugins: [
 
+    new BundleAnalyzerPlugin({
 
+      openAnalyzer: false,
+      generateStatsFile: true,
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .js('node_modules/bootstrap-filestyle/src/bootstrap-filestyle.min.js', 'public/js')
-   .js('node_modules/lodash/lodash.min.js', 'public/js')
-   .js('node_modules/jscroll/jquery.jscroll.js', 'public/js')
-   .js('resources/assets/js/friendsPageJquery.js','public/js')
-   .js('resources/assets/js/settingsPageJquery.js','public/js');
+    })
 
-mix.sass('resources/assets/sass/friends-page.scss','public/css')
-   .sass('resources/assets/sass/app.scss','public/css');
+  ],
+   devtool:'eval-source-map',
+
+  // devtool: false,
+  module: {
+          rules: [{
+              test: /\.scss$/,
+              use: [{
+                  loader: "style-loader" // creates style nodes from JS strings
+              }, {
+                  loader: "css-loader" // translates CSS into CommonJS
+              }, {
+                  loader: "sass-loader" // compiles Sass to CSS
+              }]
+          }]
+      },
+
+   resolve:{
+
+    alias:{
+
+      //sets Js to root directory + 'resources/assets/js' folder
+      JS:path.resolve(__dirname,'resources/assets/js'),
+      CSS:path.resolve(__dirname,'resources/assets/css'),
+
+    }
+
+    },
+
+ });
+//
+//
+//
+//
+// mix.js('node_modules/bootstrap-filestyle/src/bootstrap-filestyle.min.js', 'public/js')
+//    .js('node_modules/lodash/lodash.min.js', 'public/js')
+//    .js('node_modules/jscroll/jquery.jscroll.js', 'public/js')
+//    .js('resources/assets/js/friendsPageJquery.js','public/js')
+//    .js('resources/assets/js/settingsPageJquery.js','public/js');
+
+mix.react('resources/assets/js/app.jsx', 'public/js/user_bundle.js')
+
+// mix.sass('resources/assets/sass/friends-page.scss','public/css')
+  //  mix.sass('resources/assets/sass/app.scss','public/css');
 
 mix.stylus('resources/assets/css/custom-css.css','public/css');
 

@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/combinedCustomCSS.css')}}">
 
-    <script src="{{asset('js/app.js')}}"></script>
-    <script src="{{asset('js/third-party-modules.js')}}"></script>
-    <script src="{{asset('js/combinedCustomJS.js')}}"></script>
+
 
 
 
@@ -32,50 +30,13 @@
 
 
 
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12 col-sm-12 header">
-
-              @include('components.misc.header')
-
-
-
-            </div>
-
-        </div>
-
-        <div class="row">
-
-
-          <div class="col-lg-3 col-sm-12 panel">
-
-
-
-
-
-            @yield('left_panel')
-
-
-          </div>
-
-
-            <div class="content col-lg-9 col-sm-12">
-
-                  @yield('content')
-
-            </div>
-
-        </div>
-
-
+    <div id="App">
 
 
     </div>
 
-@yield('test')
 
-
+<script src="{{asset('js/user_bundle.js')}}"></script>
 </body>
 
 </html>
