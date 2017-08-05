@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+// Auth::routes();
+
 Route::get('/', 'HomeController@index');
+Route::get('/login', 'HomeController@index');
 
-
+Route::post('/login', 'LoginController@authenticate');
 
 
 /*
@@ -42,7 +45,3 @@ Route::get('/friends/group/{group}','FriendsController@getFriendsList');
 Route::get('/friends/manage/group/{group}','FriendsController@getManageFriendsList');
 
 Route::get('/friends/manage','FriendsController@showManage');
-
-
-
-Auth::routes();

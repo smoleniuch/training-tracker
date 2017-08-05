@@ -5,14 +5,19 @@
     "watch": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch-poll": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "test": "jest"
   },
   "devDependencies": {
     "axios": "^0.15.3",
     "babel-core": "^6.23.1",
+    "babel-jest": "^20.0.3",
     "babel-loader": "^6.4.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.2.1",
+    "babel-preset-react": "^6.24.1",
     "bootstrap-sass": "^3.3.7",
+    "jest": "^20.0.4",
     "jquery": "^3.1.1",
     "laravel-mix": "^0.8.1",
     "lodash": "^4.17.4",
@@ -22,13 +27,29 @@
     "webpack": "^2.2.1"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "bootstrap": "latest",
     "bootstrap-filestyle": "git+https://github.com/markusslima/bootstrap-filestyle.git",
-	"jscroll" : "https://github.com/pklauzinski/jscroll.git",
     "gulp": "^3.8.8",
     "jquery": "latest",
+    "jscroll": "https://github.com/pklauzinski/jscroll.git",
     "laravel-elixir": "^2.0.0",
-	"lodash": "^4.17.4",
-    "node-sass": "^4.5.0"
+    "lodash": "^4.17.4",
+    "node-sass": "^4.5.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/resources/assets/js/"
+    ],
+    "moduleNameMapper": {
+      "^JS(.*)": "<rootDir>/resources/assets/js$1",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }

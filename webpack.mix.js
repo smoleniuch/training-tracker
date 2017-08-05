@@ -1,5 +1,5 @@
 const { mix } = require('laravel-mix');
-
+const path = require('path')
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,16 +11,35 @@ const { mix } = require('laravel-mix');
  |
  */
 
+ mix.webpackConfig({
 
 
+   devtool:'eval-source-map',
+  // devtool: false,
 
+   resolve:{
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .js('node_modules/bootstrap-filestyle/src/bootstrap-filestyle.min.js', 'public/js')
-   .js('node_modules/lodash/lodash.min.js', 'public/js')
-   .js('node_modules/jscroll/jquery.jscroll.js', 'public/js')
-   .js('resources/assets/js/friendsPageJquery.js','public/js')
-   .js('resources/assets/js/settingsPageJquery.js','public/js');
+    alias:{
+
+      //sets Js to root directory + 'resources/assets/js' folder
+      JS:path.resolve(__dirname,'resources/assets/js'),
+
+    }
+
+    },
+
+ });
+//
+//
+//
+//
+// mix.js('node_modules/bootstrap-filestyle/src/bootstrap-filestyle.min.js', 'public/js')
+//    .js('node_modules/lodash/lodash.min.js', 'public/js')
+//    .js('node_modules/jscroll/jquery.jscroll.js', 'public/js')
+//    .js('resources/assets/js/friendsPageJquery.js','public/js')
+//    .js('resources/assets/js/settingsPageJquery.js','public/js');
+
+mix.react('resources/assets/js/app.jsx', 'public/js/user_bundle.js')
 
 mix.sass('resources/assets/sass/friends-page.scss','public/css')
    .sass('resources/assets/sass/app.scss','public/css');
