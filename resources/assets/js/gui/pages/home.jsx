@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import Sidebar from 'JS/gui/sidebar.jsx';
+import LeftSidebar from 'JS/gui/left_sidebar.jsx';
 import Dashboard from 'JS/gui/dashboard.jsx';
 import Header from 'JS/gui/header.jsx';
 
@@ -9,7 +9,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-fluid">
 
         <div className='row'>
 
@@ -19,13 +19,13 @@ class Home extends Component {
 
         <div className="row">
 
-          <div className="col-lg-3 col-sm-12 panel">
+          <div className="col-lg-2 col-sm-12 panel">
 
-            <Sidebar />
+            <LeftSidebar />
 
           </div>
 
-          <div className="content col-lg-9 col-sm-12">
+          <div className="content col-lg-10 col-sm-12">
 
             <Dashboard />
 

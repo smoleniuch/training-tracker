@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "2.7.0",
-  "hash": "47f9fb31a792fd87f9f1",
-  "time": 391,
+  "hash": "a963acaacb1ea713dd3e",
+  "time": 182,
   "publicPath": "./",
   "assetsByChunkName": {
     "/js/user_bundle": [
@@ -14,7 +14,7 @@
   "assets": [
     {
       "name": "/js/user_bundle.js",
-      "size": 2533665,
+      "size": 2533784,
       "chunks": [
         0
       ],
@@ -62,7 +62,7 @@
       "initial": true,
       "entry": true,
       "extraAsync": false,
-      "size": 910845,
+      "size": 910913,
       "names": [
         "/js/user_bundle"
       ],
@@ -70,7 +70,7 @@
         "/js/user_bundle.js",
         "/css/custom-css.css"
       ],
-      "hash": "b08e7e3c8f161f7c42d7",
+      "hash": "3c7a3fcc554d69636e87",
       "parents": [],
       "origins": [
         {
@@ -2257,6 +2257,15 @@
         },
         {
           "moduleId": 131,
+          "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/left_sidebar.jsx",
+          "module": "./resources/assets/js/gui/left_sidebar.jsx",
+          "moduleName": "./resources/assets/js/gui/left_sidebar.jsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "9:13-29"
+        },
+        {
+          "moduleId": 132,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/login_form.jsx",
           "module": "./resources/assets/js/gui/login_form.jsx",
           "moduleName": "./resources/assets/js/gui/login_form.jsx",
@@ -2265,7 +2274,7 @@
           "loc": "9:13-29"
         },
         {
-          "moduleId": 132,
+          "moduleId": 133,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
           "module": "./resources/assets/js/gui/pages/home.jsx",
           "moduleName": "./resources/assets/js/gui/pages/home.jsx",
@@ -2274,19 +2283,10 @@
           "loc": "9:13-29"
         },
         {
-          "moduleId": 133,
+          "moduleId": 134,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/login.jsx",
           "module": "./resources/assets/js/gui/pages/login.jsx",
           "moduleName": "./resources/assets/js/gui/pages/login.jsx",
-          "type": "cjs require",
-          "userRequest": "react",
-          "loc": "9:13-29"
-        },
-        {
-          "moduleId": 134,
-          "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/sidebar.jsx",
-          "module": "./resources/assets/js/gui/sidebar.jsx",
-          "moduleName": "./resources/assets/js/gui/sidebar.jsx",
           "type": "cjs require",
           "userRequest": "react",
           "loc": "9:13-29"
@@ -2773,9 +2773,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": 232,
-      "issuerName": "./~/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/user/current_user.js",
+      "issuerId": 136,
+      "issuerName": "./resources/assets/js/user/current_user.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -3471,9 +3471,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-router-dom/es/BrowserRouter.js",
-      "issuerId": 232,
-      "issuerName": "./~/react-router-dom/es/BrowserRouter.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-router-dom/es/HashRouter.js",
+      "issuerId": 233,
+      "issuerName": "./~/react-router-dom/es/HashRouter.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -4254,9 +4254,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createBrowserHistory.js",
-      "issuerId": 155,
-      "issuerName": "./~/history/createBrowserHistory.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createHashHistory.js",
+      "issuerId": 156,
+      "issuerName": "./~/history/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -4673,9 +4673,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createBrowserHistory.js",
-      "issuerId": 155,
-      "issuerName": "./~/history/createBrowserHistory.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createHashHistory.js",
+      "issuerId": 156,
+      "issuerName": "./~/history/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -5102,9 +5102,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createBrowserHistory.js",
-      "issuerId": 155,
-      "issuerName": "./~/history/createBrowserHistory.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createHashHistory.js",
+      "issuerId": 156,
+      "issuerName": "./~/history/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -5183,7 +5183,7 @@
           "loc": "11:16-36"
         },
         {
-          "moduleId": 132,
+          "moduleId": 133,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
           "module": "./resources/assets/js/gui/pages/home.jsx",
           "moduleName": "./resources/assets/js/gui/pages/home.jsx",
@@ -5192,7 +5192,7 @@
           "loc": "13:16-36"
         },
         {
-          "moduleId": 133,
+          "moduleId": 134,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/login.jsx",
           "module": "./resources/assets/js/gui/pages/login.jsx",
           "moduleName": "./resources/assets/js/gui/pages/login.jsx",
@@ -5750,7 +5750,7 @@
           "loc": "25:12-37"
         },
         {
-          "moduleId": 131,
+          "moduleId": 132,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/login_form.jsx",
           "module": "./resources/assets/js/gui/login_form.jsx",
           "moduleName": "./resources/assets/js/gui/login_form.jsx",
@@ -5759,7 +5759,7 @@
           "loc": "13:12-37"
         },
         {
-          "moduleId": 133,
+          "moduleId": 134,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/login.jsx",
           "module": "./resources/assets/js/gui/pages/login.jsx",
           "moduleName": "./resources/assets/js/gui/pages/login.jsx",
@@ -5843,9 +5843,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createBrowserHistory.js",
-      "issuerId": 155,
-      "issuerName": "./~/history/createBrowserHistory.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createHashHistory.js",
+      "issuerId": 156,
+      "issuerName": "./~/history/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -5898,9 +5898,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createBrowserHistory.js",
-      "issuerId": 155,
-      "issuerName": "./~/history/createBrowserHistory.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createHashHistory.js",
+      "issuerId": 156,
+      "issuerName": "./~/history/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6063,9 +6063,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/DOMLazyTree.js",
-      "issuerId": 21,
-      "issuerName": "./~/react-dom/lib/DOMLazyTree.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ReactDOMComponent.js",
+      "issuerId": 176,
+      "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6338,9 +6338,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ReactCompositeComponent.js",
-      "issuerId": 174,
-      "issuerName": "./~/react-dom/lib/ReactCompositeComponent.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/EventPluginHub.js",
+      "issuerId": 26,
+      "issuerName": "./~/react-dom/lib/EventPluginHub.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6668,9 +6668,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ReactBrowserEventEmitter.js",
-      "issuerId": 34,
-      "issuerName": "./~/react-dom/lib/ReactBrowserEventEmitter.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ChangeEventPlugin.js",
+      "issuerId": 166,
+      "issuerName": "./~/react-dom/lib/ChangeEventPlugin.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6778,9 +6778,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ReactDOMContainerInfo.js",
-      "issuerId": 177,
-      "issuerName": "./~/react-dom/lib/ReactDOMContainerInfo.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ReactDOMComponent.js",
+      "issuerId": 176,
+      "issuerName": "./~/react-dom/lib/ReactDOMComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6850,7 +6850,7 @@
           "loc": "19:22-49"
         },
         {
-          "moduleId": 131,
+          "moduleId": 132,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/login_form.jsx",
           "module": "./resources/assets/js/gui/login_form.jsx",
           "moduleName": "./resources/assets/js/gui/login_form.jsx",
@@ -7377,7 +7377,7 @@
           "loc": "15:20-62"
         },
         {
-          "moduleId": 133,
+          "moduleId": 134,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/login.jsx",
           "module": "./resources/assets/js/gui/pages/login.jsx",
           "moduleName": "./resources/assets/js/gui/pages/login.jsx",
@@ -7590,9 +7590,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createBrowserHistory.js",
-      "issuerId": 155,
-      "issuerName": "./~/history/createBrowserHistory.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/history/createHashHistory.js",
+      "issuerId": 156,
+      "issuerName": "./~/history/createHashHistory.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -7958,9 +7958,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/instantiateReactComponent.js",
-      "issuerId": 97,
-      "issuerName": "./~/react-dom/lib/instantiateReactComponent.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ReactInjection.js",
+      "issuerId": 197,
+      "issuerName": "./~/react-dom/lib/ReactInjection.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -8004,9 +8004,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ReactMount.js",
-      "issuerId": 88,
-      "issuerName": "./~/react-dom/lib/ReactMount.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ReactUpdates.js",
+      "issuerId": 14,
+      "issuerName": "./~/react-dom/lib/ReactUpdates.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -8050,9 +8050,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/instantiateReactComponent.js",
-      "issuerId": 97,
-      "issuerName": "./~/react-dom/lib/instantiateReactComponent.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/ReactInjection.js",
+      "issuerId": 197,
+      "issuerName": "./~/react-dom/lib/ReactInjection.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -8234,9 +8234,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/checkReactTypeSpec.js",
-      "issuerId": 222,
-      "issuerName": "./~/react-dom/lib/checkReactTypeSpec.js",
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/react-dom/lib/LinkedValueUtils.js",
+      "issuerId": 50,
+      "issuerName": "./~/react-dom/lib/LinkedValueUtils.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -9857,14 +9857,14 @@
       ],
       "assets": [],
       "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
-      "issuerId": 132,
+      "issuerId": 133,
       "issuerName": "./resources/assets/js/gui/pages/home.jsx",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 132,
+          "moduleId": 133,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
           "module": "./resources/assets/js/gui/pages/home.jsx",
           "moduleName": "./resources/assets/js/gui/pages/home.jsx",
@@ -9894,14 +9894,14 @@
       ],
       "assets": [],
       "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
-      "issuerId": 132,
+      "issuerId": 133,
       "issuerName": "./resources/assets/js/gui/pages/home.jsx",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 132,
+          "moduleId": 133,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
           "module": "./resources/assets/js/gui/pages/home.jsx",
           "moduleName": "./resources/assets/js/gui/pages/home.jsx",
@@ -9917,6 +9917,43 @@
     },
     {
       "id": 131,
+      "identifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/left_sidebar.jsx",
+      "name": "./resources/assets/js/gui/left_sidebar.jsx",
+      "index": 263,
+      "index2": 260,
+      "size": 6062,
+      "cacheable": true,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
+      "issuerId": 133,
+      "issuerName": "./resources/assets/js/gui/pages/home.jsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 133,
+          "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
+          "module": "./resources/assets/js/gui/pages/home.jsx",
+          "moduleName": "./resources/assets/js/gui/pages/home.jsx",
+          "type": "cjs require",
+          "userRequest": "JS/gui/left_sidebar.jsx",
+          "loc": "17:20-54"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "depth": 3,
+      "source": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require(\"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar LeftSidebar = function (_React$Component) {\n    _inherits(LeftSidebar, _React$Component);\n\n    function LeftSidebar(props) {\n        _classCallCheck(this, LeftSidebar);\n\n        return _possibleConstructorReturn(this, (LeftSidebar.__proto__ || Object.getPrototypeOf(LeftSidebar)).call(this, props));\n    }\n\n    _createClass(LeftSidebar, [{\n        key: \"render\",\n        value: function render() {\n\n            return _react2.default.createElement(\n                \"div\",\n                { id: \"sidebar\" },\n                _react2.default.createElement(\"div\", { className: \"col-md-3\" }),\n                _react2.default.createElement(\n                    \"div\",\n                    { className: \"col-md-6\" },\n                    _react2.default.createElement(\"img\", { className: \"avatar\", src: \"\" })\n                ),\n                _react2.default.createElement(\"div\", { className: \"col-md-3\" }),\n                _react2.default.createElement(\n                    \"div\",\n                    { className: \"col-md-12\" },\n                    _react2.default.createElement(\n                        \"ul\",\n                        { className: \"nav nav-pills nav-stacked nav-panel-css\" },\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-piggy-bank\" }),\n                                \" My workouts\"\n                            )\n                        ),\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"/profile/\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-user\" }),\n                                \" Profile\"\n                            )\n                        ),\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"/settings/profile\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-wrench\" }),\n                                \" Settings\"\n                            )\n                        ),\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"/friends\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-heart\" }),\n                                \" Friends\"\n                            )\n                        ),\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"#\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-envelope\" }),\n                                \" Messages\"\n                            )\n                        )\n                    ),\n                    _react2.default.createElement(\n                        \"form\",\n                        { method: \"post\", action: \"/logout\" },\n                        _react2.default.createElement(\n                            \"button\",\n                            { id: \"log-out-button\", className: \"btn btn-default text-right\", type: \"submit\" },\n                            _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-off\" }),\n                            \" Log out\"\n                        )\n                    )\n                )\n            );\n        }\n    }]);\n\n    return LeftSidebar;\n}(_react2.default.Component);\n\nexports.default = LeftSidebar;"
+    },
+    {
+      "id": 132,
       "identifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/login_form.jsx",
       "name": "./resources/assets/js/gui/login_form.jsx",
       "index": 257,
@@ -9931,14 +9968,14 @@
       ],
       "assets": [],
       "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/login.jsx",
-      "issuerId": 133,
+      "issuerId": 134,
       "issuerName": "./resources/assets/js/gui/pages/login.jsx",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 133,
+          "moduleId": 134,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/login.jsx",
           "module": "./resources/assets/js/gui/pages/login.jsx",
           "moduleName": "./resources/assets/js/gui/pages/login.jsx",
@@ -9953,14 +9990,14 @@
       "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _user = require('JS/api/user.js');\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _reactRouterDom = require('react-router-dom');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar LoginForm = function (_Component) {\n  _inherits(LoginForm, _Component);\n\n  function LoginForm(props) {\n    _classCallCheck(this, LoginForm);\n\n    var _this = _possibleConstructorReturn(this, (LoginForm.__proto__ || Object.getPrototypeOf(LoginForm)).call(this, props));\n\n    _this.state = {\n\n      email: '',\n      password: ''\n\n    };\n\n    _this.updateEmail = _this.updateEmail.bind(_this);\n    _this.updatePassword = _this.updatePassword.bind(_this);\n    _this.logIn = _this.logIn.bind(_this);\n    return _this;\n  }\n\n  _createClass(LoginForm, [{\n    key: 'render',\n    value: function render() {\n      var _ref = this.props.location.state || { from: { pathname: '/' } },\n          from = _ref.from;\n\n      if (this.props.currentUser.isLoggedIn()) {\n        return _react2.default.createElement(_reactRouterDom.Redirect, { to: from });\n      }\n\n      return _react2.default.createElement(\n        'div',\n        { id: 'login-form' },\n        _react2.default.createElement(\n          'form',\n          { action: '', method: 'POST' },\n          _react2.default.createElement(\n            'div',\n            { id: 'login-form' },\n            _react2.default.createElement(\n              'div',\n              { className: 'form-group' },\n              _react2.default.createElement(\n                'label',\n                { htmlFor: 'inputEmail' },\n                'Login'\n              ),\n              _react2.default.createElement('span', { className: 'help-block' }),\n              _react2.default.createElement('input', { onChange: this.updateEmail, className: 'form-control', id: 'inputEmail', name: 'email', type: 'text', placeholder: 'email', value: this.state.email })\n            ),\n            _react2.default.createElement(\n              'div',\n              { className: 'form-group' },\n              _react2.default.createElement(\n                'label',\n                { htmlFor: 'inputPassword' },\n                'Password'\n              ),\n              _react2.default.createElement('span', { className: 'help-block' }),\n              _react2.default.createElement('input', { onChange: this.updatePassword, className: 'form-control', id: 'inputPassword', name: 'password', type: 'password', placeholder: 'password', value: this.state.password })\n            ),\n            _react2.default.createElement(\n              'div',\n              { className: 'form-group has-error' },\n              _react2.default.createElement('span', { className: 'help-block' })\n            ),\n            _react2.default.createElement(\n              'button',\n              { onClick: this.logIn, id: 'login-button', type: 'submit', className: 'btn btn-default text-right' },\n              _react2.default.createElement('span', { className: 'glyphicon glyphicon-log-in' }),\n              ' Log in'\n            ),\n            _react2.default.createElement(\n              'a',\n              { id: 'register-button', href: '/register', className: 'btn btn-default text-right' },\n              _react2.default.createElement('span', { className: 'glyphicon glyphicon-registration-mark' }),\n              ' Register'\n            )\n          )\n        )\n      );\n    }\n  }, {\n    key: 'logIn',\n    value: function logIn(e) {\n      e.preventDefault();\n\n      var success = function success() {};\n      var fail = function fail() {};\n\n      this.props.currentUser.logIn(this.state.email, this.state.password, success, fail);\n    }\n  }, {\n    key: 'updateEmail',\n    value: function updateEmail(event) {\n\n      this.setState({\n\n        email: event.target.value\n\n      });\n    }\n  }, {\n    key: 'updatePassword',\n    value: function updatePassword(event) {\n\n      this.setState({\n\n        password: event.target.value\n\n      });\n    }\n  }]);\n\n  return LoginForm;\n}(_react.Component);\n\nexports.default = LoginForm;"
     },
     {
-      "id": 132,
+      "id": 133,
       "identifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
       "name": "./resources/assets/js/gui/pages/home.jsx",
       "index": 262,
       "index2": 263,
-      "size": 3255,
+      "size": 3287,
       "cacheable": true,
-      "built": false,
+      "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -9987,10 +10024,10 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 2,
-      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = require('react-dom');\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _sidebar = require('JS/gui/sidebar.jsx');\n\nvar _sidebar2 = _interopRequireDefault(_sidebar);\n\nvar _dashboard = require('JS/gui/dashboard.jsx');\n\nvar _dashboard2 = _interopRequireDefault(_dashboard);\n\nvar _header = require('JS/gui/header.jsx');\n\nvar _header2 = _interopRequireDefault(_header);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Home = function (_Component) {\n  _inherits(Home, _Component);\n\n  function Home() {\n    _classCallCheck(this, Home);\n\n    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));\n  }\n\n  _createClass(Home, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        { className: 'container' },\n        _react2.default.createElement(\n          'div',\n          { className: 'row' },\n          _react2.default.createElement(_header2.default, null)\n        ),\n        _react2.default.createElement(\n          'div',\n          { className: 'row' },\n          _react2.default.createElement(\n            'div',\n            { className: 'col-lg-3 col-sm-12 panel' },\n            _react2.default.createElement(_sidebar2.default, null)\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'content col-lg-9 col-sm-12' },\n            _react2.default.createElement(_dashboard2.default, null)\n          )\n        )\n      );\n    }\n  }]);\n\n  return Home;\n}(_react.Component);\n\nexports.default = Home;"
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = require('react-dom');\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _left_sidebar = require('JS/gui/left_sidebar.jsx');\n\nvar _left_sidebar2 = _interopRequireDefault(_left_sidebar);\n\nvar _dashboard = require('JS/gui/dashboard.jsx');\n\nvar _dashboard2 = _interopRequireDefault(_dashboard);\n\nvar _header = require('JS/gui/header.jsx');\n\nvar _header2 = _interopRequireDefault(_header);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Home = function (_Component) {\n  _inherits(Home, _Component);\n\n  function Home() {\n    _classCallCheck(this, Home);\n\n    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));\n  }\n\n  _createClass(Home, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        { className: 'container-fluid' },\n        _react2.default.createElement(\n          'div',\n          { className: 'row' },\n          _react2.default.createElement(_header2.default, null)\n        ),\n        _react2.default.createElement(\n          'div',\n          { className: 'row' },\n          _react2.default.createElement(\n            'div',\n            { className: 'col-lg-2 col-sm-12 panel' },\n            _react2.default.createElement(_left_sidebar2.default, null)\n          ),\n          _react2.default.createElement(\n            'div',\n            { className: 'content col-lg-10 col-sm-12' },\n            _react2.default.createElement(_dashboard2.default, null)\n          )\n        )\n      );\n    }\n  }]);\n\n  return Home;\n}(_react.Component);\n\nexports.default = Home;"
     },
     {
-      "id": 133,
+      "id": 134,
       "identifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/login.jsx",
       "name": "./resources/assets/js/gui/pages/login.jsx",
       "index": 256,
@@ -10025,43 +10062,6 @@
       "providedExports": null,
       "depth": 2,
       "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = require('react-dom');\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _ajax_handler = require('JS/support/http/ajax_handler.js');\n\nvar _ajax_handler2 = _interopRequireDefault(_ajax_handler);\n\nvar _user = require('JS/api/user.js');\n\nvar _login_form = require('JS/gui/login_form.jsx');\n\nvar _login_form2 = _interopRequireDefault(_login_form);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nrequire('CSS/pages/login_page.scss');\n\nvar Login = function (_Component) {\n  _inherits(Login, _Component);\n\n  function Login(props) {\n    _classCallCheck(this, Login);\n\n    return _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).call(this, props));\n  }\n\n  _createClass(Login, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        { className: 'container-fluid  login-page' },\n        _react2.default.createElement(\n          'div',\n          { className: 'row login-form' },\n          _react2.default.createElement(\n            'div',\n            { className: 'col col-sm-12 ' },\n            _react2.default.createElement(_login_form2.default, this.props)\n          )\n        )\n      );\n    }\n  }]);\n\n  return Login;\n}(_react.Component);\n\nexports.default = Login;"
-    },
-    {
-      "id": 134,
-      "identifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/sidebar.jsx",
-      "name": "./resources/assets/js/gui/sidebar.jsx",
-      "index": 263,
-      "index2": 260,
-      "size": 6026,
-      "cacheable": true,
-      "built": false,
-      "optional": false,
-      "prefetched": false,
-      "chunks": [
-        0
-      ],
-      "assets": [],
-      "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
-      "issuerId": 132,
-      "issuerName": "./resources/assets/js/gui/pages/home.jsx",
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "reasons": [
-        {
-          "moduleId": 132,
-          "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/home.jsx",
-          "module": "./resources/assets/js/gui/pages/home.jsx",
-          "moduleName": "./resources/assets/js/gui/pages/home.jsx",
-          "type": "cjs require",
-          "userRequest": "JS/gui/sidebar.jsx",
-          "loc": "17:15-44"
-        }
-      ],
-      "usedExports": true,
-      "providedExports": null,
-      "depth": 3,
-      "source": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require(\"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Sidebar = function (_React$Component) {\n    _inherits(Sidebar, _React$Component);\n\n    function Sidebar(props) {\n        _classCallCheck(this, Sidebar);\n\n        return _possibleConstructorReturn(this, (Sidebar.__proto__ || Object.getPrototypeOf(Sidebar)).call(this, props));\n    }\n\n    _createClass(Sidebar, [{\n        key: \"render\",\n        value: function render() {\n\n            return _react2.default.createElement(\n                \"div\",\n                { id: \"sidebar\" },\n                _react2.default.createElement(\"div\", { className: \"col-md-3\" }),\n                _react2.default.createElement(\n                    \"div\",\n                    { className: \"col-md-6\" },\n                    _react2.default.createElement(\"img\", { className: \"avatar\", src: \"\" })\n                ),\n                _react2.default.createElement(\"div\", { className: \"col-md-3\" }),\n                _react2.default.createElement(\n                    \"div\",\n                    { className: \"col-md-12\" },\n                    _react2.default.createElement(\n                        \"ul\",\n                        { className: \"nav nav-pills nav-stacked nav-panel-css\" },\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-piggy-bank\" }),\n                                \" My workouts\"\n                            )\n                        ),\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"/profile/\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-user\" }),\n                                \" Profile\"\n                            )\n                        ),\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"/settings/profile\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-wrench\" }),\n                                \" Settings\"\n                            )\n                        ),\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"/friends\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-heart\" }),\n                                \" Friends\"\n                            )\n                        ),\n                        _react2.default.createElement(\n                            \"li\",\n                            null,\n                            _react2.default.createElement(\n                                \"a\",\n                                { href: \"#\" },\n                                _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-envelope\" }),\n                                \" Messages\"\n                            )\n                        )\n                    ),\n                    _react2.default.createElement(\n                        \"form\",\n                        { method: \"post\", action: \"/logout\" },\n                        _react2.default.createElement(\n                            \"button\",\n                            { id: \"log-out-button\", className: \"btn btn-default text-right\", type: \"submit\" },\n                            _react2.default.createElement(\"span\", { className: \"glyphicon glyphicon-off\" }),\n                            \" Log out\"\n                        )\n                    )\n                )\n            );\n        }\n    }]);\n\n    return Sidebar;\n}(_react2.default.Component);\n\nexports.default = Sidebar;"
     },
     {
       "id": 135,
@@ -10108,7 +10108,7 @@
       "index2": 253,
       "size": 2170,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -14971,14 +14971,14 @@
       ],
       "assets": [],
       "issuer": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/login.jsx",
-      "issuerId": 133,
+      "issuerId": 134,
       "issuerName": "./resources/assets/js/gui/pages/login.jsx",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": 133,
+          "moduleId": 134,
           "moduleIdentifier": "/home/smolen/Projects/Personal/training-tracker/node_modules/babel-loader/lib/index.js?cacheDirectory!/home/smolen/Projects/Personal/training-tracker/resources/assets/js/gui/pages/login.jsx",
           "module": "./resources/assets/js/gui/pages/login.jsx",
           "moduleName": "./resources/assets/js/gui/pages/login.jsx",
